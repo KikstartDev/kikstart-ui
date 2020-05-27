@@ -25,6 +25,13 @@
     "demo-e2e": {
       "tags": [],
       "implicitDependencies": ["demo"]
+    },
+    "schematics": {
+      "tags": []
+    },
+    "schematics-e2e": {
+      "tags": [],
+      "implicitDependencies": ["schematics"]
     }
   }
 }
