@@ -1,7 +1,7 @@
 import { async, TestBed } from '@angular/core/testing';
 import { LayoutConsoleModule } from './layout-console.module';
 
-describe('LayoutConsoleModule', () => {
+describe('ConsoleModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [LayoutConsoleModule],
