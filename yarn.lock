@@ -7514,6 +7514,11 @@ ng-packagr@^9.0.0:
     terser "^4.3.8"
     update-notifier "^4.0.0"
 
+ngx-trend@^5.0.1:
+  version "5.0.1"
+  resolved "http://localhost:4873/ngx-trend/-/ngx-trend-5.0.1.tgz#4b2f7917eeaf9ccaccab5b45a3f475d755d34c8a"
+  integrity sha512-M7P1jQlwK8998qmkDQjslBZNUrnD3p1nHLuQHPF2Ek/4dpb+FDLogbDcWPbGc2XiepIfBeOaf3Jt1k+X4wHkuQ==
+
 nice-try@^1.0.4:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/nice-try/-/nice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
