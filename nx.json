@@ -32,6 +32,9 @@
     "schematics-e2e": {
       "tags": [],
       "implicitDependencies": ["schematics"]
+    },
+    "create-kikstart-ui": {
+      "tags": []
     }
   }
 }

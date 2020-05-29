@@ -190,6 +190,42 @@
           }
         }
       }
+    },
+    "create-kikstart-ui": {
+      "root": "libs/create-kikstart-ui",
+      "sourceRoot": "libs/create-kikstart-ui/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/create-kikstart-ui/tsconfig.lib.json",
+              "libs/create-kikstart-ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/create-kikstart-ui/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/create-kikstart-ui/jest.config.js",
+            "tsConfig": "libs/create-kikstart-ui/tsconfig.spec.json",
+            "passWithNoTests": true
+          }
+        },
+        "build": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/create-kikstart-ui",
+            "tsConfig": "libs/create-kikstart-ui/tsconfig.lib.json",
+            "packageJson": "libs/create-kikstart-ui/package.json",
+            "main": "libs/create-kikstart-ui/src/index.ts",
+            "assets": ["libs/create-kikstart-ui/*.md"]
+          }
+        }
+      }
     }
   },
   "cli": {
