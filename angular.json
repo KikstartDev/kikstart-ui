@@ -15,6 +15,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "stylePreprocessorOptions": {
+              "includePaths": ["libs"]
+            },
             "outputPath": "dist/apps/demo",
             "index": "apps/demo/src/index.html",
             "main": "apps/demo/src/main.ts",
@@ -275,18 +278,68 @@
       "projectType": "library",
       "root": "libs/themes",
       "sourceRoot": "libs/themes/src",
-      "prefix": "kikstart-ui",
+      "prefix": "theme",
       "architect": {
         "build": {
-          "builder": "@nrwl/angular:package",
+          "builder": "@nrwl/workspace:run-commands",
           "options": {
+            "commands": [
+              {
+                "command": "npx nx run themes:build-package"
+              },
+              {
+                "command": "npx nx run themes:build-css"
+              }
+            ],
+            "parallel": false
+          }
+        },
+        "build-package": {
+          "builder": "@nrwl/node:package",
+          "options": {
+            "outputPath": "dist/libs/themes",
             "tsConfig": "libs/themes/tsconfig.lib.json",
-            "project": "libs/themes/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "libs/themes/tsconfig.lib.prod.json"
-            }
+            "packageJson": "libs/themes/package.json",
+            "main": "libs/themes/src/index.ts",
+            "assets": [
+              "libs/themes/*.md",
+              {
+                "glob": "**/*",
+                "input": "libs/themes/src/scss",
+                "output": "scss"
+              },
+              {
+                "glob": "**/*",
+                "input": "libs/themes/src/vendor",
+                "output": "vendor"
+              }
+            ]
+          }
+        },
+        "build-css": {
+          "builder": "@nrwl/workspace:run-commands",
+          "options": {
+            "commands": [
+              {
+                "command": "npx sass ./dist/libs/themes/scss/dark/index.scss ./dist/libs/themes/css/dark.css"
+              },
+              {
+                "command": "npx sass -s compressed ./dist/libs/themes/scss/dark/index.scss ./dist/libs/themes/css/dark.min.css"
+              },
+              {
+                "command": "npx sass ./dist/libs/themes/scss/pirate/index.scss ./dist/libs/themes/css/pirate.css"
+              },
+              {
+                "command": "npx sass -s compressed ./dist/libs/themes/scss/pirate/index.scss ./dist/libs/themes/css/pirate.min.css"
+              },
+              {
+                "command": "npx sass ./dist/libs/themes/scss/light/index.scss ./dist/libs/themes/css/light.css"
+              },
+              {
+                "command": "npx sass -s compressed ./dist/libs/themes/scss/light/index.scss ./dist/libs/themes/css/light.min.css"
+              }
+            ],
+            "parallel": true
           }
         },
         "lint": {
