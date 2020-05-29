@@ -19,7 +19,8 @@
       "@kikstart-ui/schematics": ["libs/schematics/src/index.ts"],
       "@kikstart-ui/create-kikstart-ui": [
         "libs/create-kikstart-ui/src/index.ts"
-      ]
+      ],
+      "@kikstart-ui/layout-console": ["libs/layout/console/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

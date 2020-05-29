@@ -35,6 +35,9 @@
     },
     "create-kikstart-ui": {
       "tags": []
+    },
+    "layout-console": {
+      "tags": []
     }
   }
 }
