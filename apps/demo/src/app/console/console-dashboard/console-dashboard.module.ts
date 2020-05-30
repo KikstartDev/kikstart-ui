@@ -1,9 +1,9 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { LayoutConsoleModule } from '@kikstart-ui/layout-console';
-import { TrendModule } from 'ngx-trend';
-import { ConsoleDashboardComponent } from './console-dashboard.component';
+import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core'
+import { RouterModule } from '@angular/router'
+import { LayoutConsoleModule } from '@kikstart-ui/layout-console'
+import { TrendModule } from 'ngx-trend'
+import { ConsoleDashboardComponent } from './console-dashboard.component'
 
 @NgModule({
   declarations: [ConsoleDashboardComponent],

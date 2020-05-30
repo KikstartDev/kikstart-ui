@@ -1,25 +1,24 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing'
 
-import { ConsoleTabsComponent } from './console-tabs.component';
+import { ConsoleTabsComponent } from './console-tabs.component'
 
 describe('ConsoleTabsComponent', () => {
-  let component: ConsoleTabsComponent;
-  let fixture: ComponentFixture<ConsoleTabsComponent>;
+  let component: ConsoleTabsComponent
+  let fixture: ComponentFixture<ConsoleTabsComponent>
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ConsoleTabsComponent ]
-    })
-    .compileComponents();
-  }));
+      declarations: [ConsoleTabsComponent],
+    }).compileComponents()
+  }))
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ConsoleTabsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+    fixture = TestBed.createComponent(ConsoleTabsComponent)
+    component = fixture.componentInstance
+    fixture.detectChanges()
+  })
 
   it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+    expect(component).toBeTruthy()
+  })
+})

@@ -1,15 +1,11 @@
-import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
-import { RouterModule } from '@angular/router';
-import { LayoutConsoleModule } from '@kikstart-ui/layout-console';
-import { ConsoleDummyComponent } from './console-dummy.component';
+import { CommonModule } from '@angular/common'
+import { NgModule } from '@angular/core'
+import { RouterModule } from '@angular/router'
+import { LayoutConsoleModule } from '@kikstart-ui/layout-console'
+import { ConsoleDummyComponent } from './console-dummy.component'
 
 @NgModule({
   declarations: [ConsoleDummyComponent],
-  imports: [
-    CommonModule,
-    RouterModule.forChild([{ path: '', component: ConsoleDummyComponent }]),
-    LayoutConsoleModule,
-  ],
+  imports: [CommonModule, RouterModule.forChild([{ path: '', component: ConsoleDummyComponent }]), LayoutConsoleModule],
 })
 export class ConsoleDummyModule {}

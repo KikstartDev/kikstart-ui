@@ -14,11 +14,7 @@ export class ConsoleThumb {
     <div class="row">
       <ng-container *ngFor="let thumb of thumbs">
         <div class="col-12 col-md-4 mb-3 mb-md-5">
-          <div
-            class="card cursor-pointer"
-            [style.min-height.px]="200"
-            [routerLink]="thumb.route || thumb.id"
-          >
+          <div class="card cursor-pointer" [style.min-height.px]="200" [routerLink]="thumb.route || thumb.id">
             <div class="card-body">
               <div [style.font-size.rem]="2">
                 <a [routerLink]="thumb.route">

@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { LayoutConsoleHelper } from '@kikstart-ui/layout-console';
+import { Component } from '@angular/core'
+import { LayoutConsoleHelper } from '@kikstart-ui/layout-console'
 
 @Component({
   template: `
@@ -17,13 +17,7 @@ import { LayoutConsoleHelper } from '@kikstart-ui/layout-console';
           </a>
         </span>
       </console-navbar>
-      <console-sidebar
-        [homeLink]="homeLink"
-        [links]="links"
-        baseLink="/console"
-        [brand]="brand"
-      >
-      </console-sidebar>
+      <console-sidebar [homeLink]="homeLink" [links]="links" baseLink="/console" [brand]="brand"> </console-sidebar>
 
       <div class="h-100 overflow-auto">
         <router-outlet></router-outlet>
@@ -36,23 +30,17 @@ export class ConsoleComponent {
     logo: '/assets/logo.svg',
     title: 'Kikstart',
     route: '/',
-  };
-  public homeLink = LayoutConsoleHelper.link(
-    'dashboard',
-    'Dashboard',
-    'fa-dashboard'
-  );
+  }
+  public homeLink = LayoutConsoleHelper.link('dashboard', 'Dashboard', 'fa-dashboard')
   public links = [
     LayoutConsoleHelper.header('Pages', [
       LayoutConsoleHelper.link('components', 'Components', 'fa-users'),
       LayoutConsoleHelper.link('layouts', 'Layouts', 'fa-tablet'),
       LayoutConsoleHelper.link('themes', 'Themes', 'fa-paint-brush'),
     ]),
-    LayoutConsoleHelper.header('Settings', [
-      LayoutConsoleHelper.link('users', 'Users', 'fa-users'),
-    ]),
-  ];
+    LayoutConsoleHelper.header('Settings', [LayoutConsoleHelper.link('users', 'Users', 'fa-users')]),
+  ]
   public user = {
     avatarUrl: 'https://avatars3.githubusercontent.com/u/36491?v=4',
-  };
+  }
 }

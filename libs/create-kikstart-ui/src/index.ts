@@ -1,1 +1,1 @@
-export * from './lib/create-kikstart-ui';
+export * from './lib/create-kikstart-ui'
