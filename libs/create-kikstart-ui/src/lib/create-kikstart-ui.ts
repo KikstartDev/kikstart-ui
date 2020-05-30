@@ -21,11 +21,11 @@ if (parsedArgs.help) {
   showHelp();
   process.exit(0);
 }
-const packageManager = determinePackageManager();
+
 determineWorkspaceName(parsedArgs).then((name) => {
   return determineCli().then((cli) => {
-    const tmpDir = createSandbox(packageManager, cli);
-    createApp(tmpDir, cli, parsedArgs, name);
+    const tmpDir = createSandbox(determinePackageManager(), cli);
+    createApp(tmpDir, cli, name);
     showNxWarning(name);
   });
 });
@@ -42,8 +42,8 @@ function showHelp() {
 `);
 }
 
-function determineWorkspaceName(parsedArgs: any): Promise<string> {
-  const workspaceName: string = parsedArgs._[2];
+function determineWorkspaceName(args: any): Promise<string> {
+  const workspaceName: string = args._[2];
 
   if (workspaceName) {
     return Promise.resolve(workspaceName);
@@ -78,10 +78,7 @@ function determineCli() {
   return Promise.resolve(angular);
 }
 
-function createSandbox(
-  packageManager: string,
-  cli: { package: string; version: string }
-) {
+function createSandbox(packageManager: string, cli: { package: string; version: string }) {
   console.log(` Creating sandbox for installation...`);
   const tmpDir = dirSync().name;
   writeFileSync(
@@ -92,7 +89,7 @@ function createSandbox(
         typescript: tsVersion,
       },
       license: 'MIT',
-    })
+    }),
   );
 
   execSync(`${packageManager} install --silent`, {
@@ -103,21 +100,13 @@ function createSandbox(
   return tmpDir;
 }
 
-function createApp(
-  tmpDir: string,
-  cli: { command: string },
-  parsedArgs: any,
-  name: string
-) {
+function createApp(tmpDir: string, cli: { command: string }, name: string) {
   const command = `new ${name}  --strict --style=scss --routing`;
 
   console.log(command);
-  execSync(
-    `"${path.join(tmpDir, 'node_modules', '.bin', cli.command)}" ${command}`,
-    {
-      stdio: [0, 1, 2],
-    }
-  );
+  execSync(`"${path.join(tmpDir, 'node_modules', '.bin', cli.command)}" ${command}`, {
+    stdio: [0, 1, 2],
+  });
   const projectDir = path.join(process.cwd(), name);
 
   execSync(`${cli.command} add @kikstart-ui/schematics`, {
