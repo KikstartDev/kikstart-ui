@@ -12,6 +12,11 @@
       "factory": "./src/schematics/schematics/schematic",
       "schema": "./src/schematics/schematics/schema.json",
       "description": "schematics schematic"
+    },
+    "layout-console": {
+      "factory": "./src/schematics/layout-console/schematic",
+      "schema": "./src/schematics/layout-console/schema.json",
+      "description": "layout-console schematic"
     }
   }
 }
