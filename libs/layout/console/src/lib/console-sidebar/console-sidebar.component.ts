@@ -6,10 +6,7 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
 @Component({
   selector: 'console-sidebar',
   template: `
-    <div
-      class="ui-sidebar bg-darker h-100 d-flex flex-column"
-      [class.ui-sidebar-collapse]="collapse"
-    >
+    <div class="ui-sidebar bg-darker h-100 d-flex flex-column" [class.ui-sidebar-collapse]="collapse">
       <console-navbar [collapsed]="collapse" [brand]="brand"></console-navbar>
       <div
         class="d-flex justify-content-between ui-sidebar-header-top cursor-pointer"
@@ -72,10 +69,7 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
                     class="ui-sidebar-item ui-sidebar-group-link cursor-pointer noselect"
                     routerLinkActive="text-primary"
                   >
-                    <i
-                      *ngIf="child.icon"
-                      class="ui-sidebar-icon fa fa-fw {{ child.icon }} mr-3 "
-                    ></i>
+                    <i *ngIf="child.icon" class="ui-sidebar-icon fa fa-fw {{ child.icon }} mr-3 "></i>
                     <a
                       [routerLink]="child.path"
                       routerLinkActive="text-primary"

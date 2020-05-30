@@ -1,5 +1,5 @@
-import { Theme } from './theme';
+import { Theme } from './theme'
 
 export class ThemesConfig {
-  themes: Theme[];
+  themes: Theme[]
 }

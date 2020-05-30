@@ -1,29 +1,23 @@
-import { Tree } from '@angular-devkit/schematics';
-import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
-import { createEmptyWorkspace } from '@nrwl/workspace/testing';
+import { Tree } from '@angular-devkit/schematics'
+import { SchematicTestRunner } from '@angular-devkit/schematics/testing'
+import { createEmptyWorkspace } from '@nrwl/workspace/testing'
 import { join } from 'path'
 
-import { LayoutConsoleSchematicSchema } from './schema';
+import { LayoutConsoleSchematicSchema } from './schema'
 
 describe('layout-console schematic', () => {
-  let appTree: Tree;
-  const options: LayoutConsoleSchematicSchema = { name: 'test' };
+  let appTree: Tree
+  const options: LayoutConsoleSchematicSchema = { name: 'test' }
 
-  const testRunner = new SchematicTestRunner(
-    '@kikstart-ui/layout-console',
-    join(__dirname, '../../../collection.json')
-  );
+  const testRunner = new SchematicTestRunner('@kikstart-ui/layout-console', join(__dirname, '../../../collection.json'))
 
   beforeEach(() => {
-    appTree = createEmptyWorkspace(Tree.empty());
-  });
+    appTree = createEmptyWorkspace(Tree.empty())
+  })
 
   it('should run successfully', async () => {
-    await expect(testRunner.runSchematicAsync(
-        'layout-console',
-        options,
-        appTree
-      ).toPromise()
-    ).resolves.not.toThrowError();
+    await expect(
+      testRunner.runSchematicAsync('layout-console', options, appTree).toPromise(),
+    ).resolves.not.toThrowError()
   })
-});
+})

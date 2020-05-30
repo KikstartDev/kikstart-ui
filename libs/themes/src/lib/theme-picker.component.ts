@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
-import { Theme } from './theme';
-import { ThemesService } from './themes.service';
-import { Observable } from 'rxjs';
+import { Component } from '@angular/core'
+import { Theme } from './theme'
+import { ThemesService } from './themes.service'
+import { Observable } from 'rxjs'
 
 @Component({
   // tslint:disable-next-line:component-selector
@@ -25,15 +25,15 @@ import { Observable } from 'rxjs';
   `,
 })
 export class ThemePickerComponent {
-  public selectedTheme$: Observable<Theme>;
-  public themes: Theme[];
+  public selectedTheme$: Observable<Theme>
+  public themes: Theme[]
 
   constructor(private readonly service: ThemesService) {
-    this.themes = this.service.themes();
-    this.selectedTheme$ = this.service.selected$;
+    this.themes = this.service.themes()
+    this.selectedTheme$ = this.service.selected$
   }
 
   setTheme(theme) {
-    this.service.loadTheme(theme);
+    this.service.loadTheme(theme)
   }
 }

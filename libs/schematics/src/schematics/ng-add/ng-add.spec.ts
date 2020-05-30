@@ -1,10 +1,10 @@
-import { Tree } from '@angular-devkit/schematics';
-import { SchematicTestRunner } from '@angular-devkit/schematics/testing';
-import * as path from 'path';
+import { Tree } from '@angular-devkit/schematics'
+import { SchematicTestRunner } from '@angular-devkit/schematics/testing'
+import * as path from 'path'
 
-const collectionPath = path.join(__dirname, '../collection.json');
+const collectionPath = path.join(__dirname, '../collection.json')
 
-const runner = new SchematicTestRunner('schematics', collectionPath);
+const runner = new SchematicTestRunner('schematics', collectionPath)
 
 export async function createTestApp(tree: Tree): Promise<Tree> {
   tree = await runner
@@ -13,16 +13,11 @@ export async function createTestApp(tree: Tree): Promise<Tree> {
       newProjectRoot: '',
       version: '9.1.0',
     })
-    .toPromise();
+    .toPromise()
   tree = await runner
-    .runExternalSchematicAsync(
-      '@schematics/angular',
-      'application',
-      { name: 'my-app' },
-      tree
-    )
-    .toPromise();
-  return tree;
+    .runExternalSchematicAsync('@schematics/angular', 'application', { name: 'my-app' }, tree)
+    .toPromise()
+  return tree
 }
 
 describe('no-app', () => {
@@ -30,33 +25,31 @@ describe('no-app', () => {
     const result = await runner
       .runSchematicAsync('ng-add', { project: 'my-app' }, Tree.empty())
       .toPromise()
-      .catch((e) => e);
-    expect(result.message).toEqual('Cannot find angular.json');
-    expect(result instanceof Error).toEqual(true);
-  });
-});
+      .catch((e) => e)
+    expect(result.message).toEqual('Cannot find angular.json')
+    expect(result instanceof Error).toEqual(true)
+  })
+})
 
 describe('ng-add', () => {
-  let tree: Tree;
+  let tree: Tree
 
   beforeEach(async () => {
-    tree = Tree.empty();
-    tree = await createTestApp(tree);
-  });
+    tree = Tree.empty()
+    tree = await createTestApp(tree)
+  })
 
   it('works', async () => {
-    const result = await runner
-      .runSchematicAsync('ng-add', {}, tree)
-      .toPromise();
+    const result = await runner.runSchematicAsync('ng-add', {}, tree).toPromise()
 
-    console.log(JSON.parse(result.readContent('/angular.json')).projects);
+    console.log(JSON.parse(result.readContent('/angular.json')).projects)
     //   console.log(result.files);
     //   // console.log(tree.getDir('/').subfiles);
     //   // console.log(tree.getDir('/').subdirs);
     //   // expect(result.files).toEqual(['/hello']);
     //   expect(true).toEqual(true);
-  });
-});
+  })
+})
 
 // describe('Store-Devtools ng-add Schematic', () => {
 //   const schematicRunner = new SchematicTestRunner(
