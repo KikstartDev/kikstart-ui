@@ -1,4 +1,4 @@
-import { chain, Rule, SchematicContext, Tree } from '@angular-devkit/schematics'
+import { chain, Rule, schematic, SchematicContext, Tree } from '@angular-devkit/schematics'
 import { addDepsToPackageJson, getProjectConfig } from '@nrwl/workspace'
 import { existsSync } from 'fs'
 import { join } from 'path'
@@ -29,6 +29,16 @@ function addStyles(options: Schema, config: any) {
   }
 }
 
+/**
+ * This is a hack to get the desired app structure.
+ *
+ * Ideally we don't change anything to the app but just add a few things to show kikstart-ui.
+ *
+ * However, for now this is what it is.
+ *
+ * @param {Tree} host
+ * @returns {Tree}
+ */
 function tweakPackage(host: Tree) {
   const appComponent = `import { Component } from '@angular/core';
 
@@ -38,8 +48,36 @@ function tweakPackage(host: Tree) {
 })
 export class AppComponent {}
 `
+  const appRoutes = `export const routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'console' },
+  { path: 'console', loadChildren: () => import('./console/console.module').then((m) => m.ConsoleModule) },
+]`
+  const appModule = `import { BrowserModule } from '@angular/platform-browser'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { NgModule } from '@angular/core'
 
-  const deleteFiles = ['src/app/app.component.html', 'src/app/app.component.css', 'src/app/app.component.scss']
+import { AppComponent } from './app.component'
+import { routes } from './app.routes'
+import { RouterModule } from '@angular/router'
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+    RouterModule.forRoot(routes, { initialNavigation: 'enabled' }),
+  ],
+  providers: [],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
+`
+  const deleteFiles = [
+    'src/app/app.component.html',
+    'src/app/app.component.css',
+    'src/app/app.component.scss',
+    'src/app/app-routing.module.ts',
+  ]
 
   deleteFiles.forEach((file) => {
     if (host.exists(file)) {
@@ -47,6 +85,8 @@ export class AppComponent {}
     }
   })
   host.overwrite('src/app/app.component.ts', appComponent)
+  host.overwrite('src/app/app.module.ts', appModule)
+  host.create('src/app/app.routes.ts', appRoutes)
   return host
 }
 
@@ -72,6 +112,7 @@ export default function (options: Schema): Rule {
         true,
       ),
       addStyles(options, config),
+      schematic('layout-console', { name: 'console', module: 'app' }),
       tweakPackage,
     ])
   }

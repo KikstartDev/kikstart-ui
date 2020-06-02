@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { LayoutConsoleModule } from '@kikstart-ui/layout-console';
-import { ConsoleDummyComponent } from './console-dummy.component.ts.template';
+import { ConsoleDummyComponent } from './console-dummy.component.ts';
 
 @NgModule({
   declarations: [ConsoleDummyComponent],
