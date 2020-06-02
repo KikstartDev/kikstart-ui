@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-import { ConsoleComponentTs } from './console.component';
+import { ConsoleComponent } from './console.component';
 
 const dummyRoute = (path: string, title?: string) => ({
   path,
@@ -8,7 +8,7 @@ const dummyRoute = (path: string, title?: string) => ({
     title,
   },
   loadChildren: () =>
-    import('./console-dummy/console-dummy.module.ts.template').then(
+    import('./console-dummy/console-dummy.module.ts').then(
       (m) => m.ConsoleDummyModule
     ),
 });
@@ -16,12 +16,12 @@ const dummyRoute = (path: string, title?: string) => ({
 export const routes: Routes = [
   {
     path: '',
-    component: ConsoleComponentTs,
+    component: ConsoleComponent,
     children: [
       {
         path: 'dashboard',
         loadChildren: () =>
-          import('./console-dashboard/console-dashboard.module.ts.template').then(
+          import('./console-dashboard/console-dashboard.module.ts').then(
             (m) => m.ConsoleDashboardModule
           ),
       },
