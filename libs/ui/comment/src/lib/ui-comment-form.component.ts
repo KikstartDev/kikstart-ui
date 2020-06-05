@@ -9,7 +9,7 @@ import { FormlyTemplateOptions } from '@ngx-formly/core'
   selector: 'ui-comment-form',
   template: `
     <div class="media">
-      <ui-avatar *ngIf="avatar" [avatar]="avatar" class="mr-3"></ui-avatar>
+      <ui-avatar *ngIf="avatarUrl" [avatarUrl]="avatarUrl" class="mr-3"></ui-avatar>
       <div class="media-body">
         <ng-container *ngIf="fields.length">
           <div>
@@ -61,7 +61,7 @@ export class UiCommentFormComponent implements OnInit {
   @Input() submitButton: boolean | string = 'Submit'
   @Input() submitButtonClass = 'btn btn-outline-success'
   @Input() placeholder = 'Enter your comment'
-  @Input() avatar?: string
+  @Input() avatarUrl?: string
   @Input() form = new FormGroup({})
   @Input() model = { text: null }
   @Input() fields: FormHelper[] = []

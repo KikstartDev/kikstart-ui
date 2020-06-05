@@ -10,7 +10,7 @@ import { UiLink } from '@kikstart-ui/ui-link'
     <div class="jumbotron mb-0" [class.text-center]="centered">
       <div class="my-3 mb-5">
         <div class="mb-3">
-          <ui-avatar *ngIf="avatar" [avatar]="avatar" [size]="avatarSize"></ui-avatar>
+          <ui-avatar *ngIf="avatarUrl" [avatarUrl]="avatarUrl" [size]="avatarSize"></ui-avatar>
           <ui-brand *ngIf="brand" class="d-block mb-5" [brand]="brand" [size]="brandSize"></ui-brand>
           <h1 *ngIf="title" class="display-4 my-2">{{ title }}</h1>
         </div>
@@ -50,7 +50,7 @@ import { UiLink } from '@kikstart-ui/ui-link'
   ],
 })
 export class UiHeroComponent {
-  @Input() avatar: string
+  @Input() avatarUrl: string
   @Input() avatarSize: UiAvatarSizes = 'xl'
   @Input() brand: UiBrand
   @Input() brandSize: UiBrandSizes = 'lg'

@@ -24,7 +24,7 @@ export class CommentFeedComponent {
         created: new Date('Sat, 04 Jan 2020 00:41:30 GMT'),
         author: {
           name: 'kikstart.dev',
-          avatar: 'assets/logo.png',
+          avatarUrl: 'assets/logo.png',
           username: '@KikstartDev',
         },
         buttons: [

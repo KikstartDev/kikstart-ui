@@ -4,7 +4,7 @@ import { Component } from '@angular/core'
   templateUrl: './comment-form-simple.component.html',
 })
 export class CommentFormSimpleComponent {
-  public avatar = 'assets/logo.png'
+  public avatarUrl = 'assets/logo.png'
 
   handleAction({ payload }) {
     console.log({ payload })

@@ -6,5 +6,5 @@ import { Component } from '@angular/core'
 export class HeroUserComponent {
   public title = 'Bram Borggreve'
   public description = '@beeman'
-  public avatar = 'https://github.com/beeman.png'
+  public avatarUrl = 'https://github.com/beeman.png'
 }

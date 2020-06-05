@@ -8,7 +8,7 @@ import { UiComment } from './ui-comment'
     <div class="media">
       <ui-avatar
         *ngIf="comment?.author?.avatarUrl"
-        [avatar]="comment?.author?.avatarUrl"
+        [avatarUrl]="comment?.author?.avatarUrl"
         [alt]="comment?.author?.username"
         class="mr-3"
       >

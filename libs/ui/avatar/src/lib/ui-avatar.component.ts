@@ -7,7 +7,7 @@ export type UiAvatarSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
   template: `
     <img
       [attr.alt]="alt"
-      [attr.src]="avatar"
+      [attr.src]="avatarUrl"
       class="avatar"
       [class.avatar-xs]="size === 'xs'"
       [class.avatar-sm]="size === 'sm'"
@@ -15,7 +15,7 @@ export type UiAvatarSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
       [class.avatar-lg]="size === 'lg'"
       [class.avatar-xl]="size === 'xl'"
       [class.avatar-xxl]="size === 'xxl'"
-      *ngIf="avatar"
+      *ngIf="avatarUrl"
     />
   `,
   styles: [
@@ -54,13 +54,4 @@ export class UiAvatarComponent {
   @Input() public alt = 'Avatar'
   @Input() public avatarUrl: string
   @Input() public size: UiAvatarSizes = 'md'
-
-  @Input() public set avatar(avatar: string) {
-    console.warn(`ui-avatar: The 'avatar' input is deprecated, please use 'avatarUrl'`)
-    this.avatarUrl = avatar
-  }
-
-  public get avatar(): string {
-    return this.avatarUrl
-  }
 }

@@ -9,7 +9,7 @@ export class CommentSimpleComponent {
     text: 'This is a demo of the ui-comment component',
     created: new Date('Sat, 04 Jan 2020 00:41:30 GMT'),
     author: {
-      avatar: 'assets/logo.png',
+      avatarUrl: 'assets/logo.png',
       name: 'kikstart.dev',
       username: '@KikstartDev',
     },
