@@ -1,2 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'themes/src/scss/dark';
+
+@import '~prismjs/themes/prism-okaidia.css';
+// TODO: Fix this in the ui-code component or upstream.
+pre.codeblock {
+  margin: 0;
+}

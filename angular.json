@@ -353,6 +353,499 @@
           "style": "scss"
         }
       }
+    },
+    "ui-form": {
+      "projectType": "library",
+      "root": "libs/ui/form",
+      "sourceRoot": "libs/ui/form/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/form/tsconfig.lib.json", "libs/ui/form/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/form/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/form/jest.config.js",
+            "tsConfig": "libs/ui/form/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/form/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-render": {
+      "projectType": "library",
+      "root": "libs/ui/render",
+      "sourceRoot": "libs/ui/render/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/render/tsconfig.lib.json", "libs/ui/render/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/render/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/render/jest.config.js",
+            "tsConfig": "libs/ui/render/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/render/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-avatar": {
+      "projectType": "library",
+      "root": "libs/ui/avatar",
+      "sourceRoot": "libs/ui/avatar/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/avatar/tsconfig.lib.json", "libs/ui/avatar/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/avatar/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/avatar/jest.config.js",
+            "tsConfig": "libs/ui/avatar/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/avatar/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-brand": {
+      "projectType": "library",
+      "root": "libs/ui/brand",
+      "sourceRoot": "libs/ui/brand/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/brand/tsconfig.lib.json", "libs/ui/brand/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/brand/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/brand/jest.config.js",
+            "tsConfig": "libs/ui/brand/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/brand/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-button": {
+      "projectType": "library",
+      "root": "libs/ui/button",
+      "sourceRoot": "libs/ui/button/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/button/tsconfig.lib.json", "libs/ui/button/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/button/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/button/jest.config.js",
+            "tsConfig": "libs/ui/button/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/button/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-card": {
+      "projectType": "library",
+      "root": "libs/ui/card",
+      "sourceRoot": "libs/ui/card/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/card/tsconfig.lib.json", "libs/ui/card/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/card/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/card/jest.config.js",
+            "tsConfig": "libs/ui/card/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/card/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-cart-icon": {
+      "projectType": "library",
+      "root": "libs/ui/cart-icon",
+      "sourceRoot": "libs/ui/cart-icon/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/cart-icon/tsconfig.lib.json", "libs/ui/cart-icon/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/cart-icon/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/cart-icon/jest.config.js",
+            "tsConfig": "libs/ui/cart-icon/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/cart-icon/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-code": {
+      "projectType": "library",
+      "root": "libs/ui/code",
+      "sourceRoot": "libs/ui/code/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/code/tsconfig.lib.json", "libs/ui/code/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/code/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/code/jest.config.js",
+            "tsConfig": "libs/ui/code/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/code/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-comment": {
+      "projectType": "library",
+      "root": "libs/ui/comment",
+      "sourceRoot": "libs/ui/comment/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/comment/tsconfig.lib.json", "libs/ui/comment/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/comment/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/comment/jest.config.js",
+            "tsConfig": "libs/ui/comment/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/comment/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-hero": {
+      "projectType": "library",
+      "root": "libs/ui/hero",
+      "sourceRoot": "libs/ui/hero/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/hero/tsconfig.lib.json", "libs/ui/hero/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/hero/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/hero/jest.config.js",
+            "tsConfig": "libs/ui/hero/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/hero/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-label": {
+      "projectType": "library",
+      "root": "libs/ui/label",
+      "sourceRoot": "libs/ui/label/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/label/tsconfig.lib.json", "libs/ui/label/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/label/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/label/jest.config.js",
+            "tsConfig": "libs/ui/label/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/label/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-link": {
+      "projectType": "library",
+      "root": "libs/ui/link",
+      "sourceRoot": "libs/ui/link/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/link/tsconfig.lib.json", "libs/ui/link/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/link/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/link/jest.config.js",
+            "tsConfig": "libs/ui/link/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/link/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-loading": {
+      "projectType": "library",
+      "root": "libs/ui/loading",
+      "sourceRoot": "libs/ui/loading/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/loading/tsconfig.lib.json", "libs/ui/loading/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/loading/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/loading/jest.config.js",
+            "tsConfig": "libs/ui/loading/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/loading/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-markdown": {
+      "projectType": "library",
+      "root": "libs/ui/markdown",
+      "sourceRoot": "libs/ui/markdown/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/markdown/tsconfig.lib.json", "libs/ui/markdown/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/markdown/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/markdown/jest.config.js",
+            "tsConfig": "libs/ui/markdown/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/markdown/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-no-data": {
+      "projectType": "library",
+      "root": "libs/ui/no-data",
+      "sourceRoot": "libs/ui/no-data/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/no-data/tsconfig.lib.json", "libs/ui/no-data/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/no-data/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/no-data/jest.config.js",
+            "tsConfig": "libs/ui/no-data/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/no-data/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-price": {
+      "projectType": "library",
+      "root": "libs/ui/price",
+      "sourceRoot": "libs/ui/price/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/price/tsconfig.lib.json", "libs/ui/price/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/price/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/price/jest.config.js",
+            "tsConfig": "libs/ui/price/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/price/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "ui-timeago": {
+      "projectType": "library",
+      "root": "libs/ui/timeago",
+      "sourceRoot": "libs/ui/timeago/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/ui/timeago/tsconfig.lib.json", "libs/ui/timeago/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/ui/timeago/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/timeago/jest.config.js",
+            "tsConfig": "libs/ui/timeago/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/ui/timeago/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
