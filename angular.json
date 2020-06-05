@@ -364,6 +364,18 @@
       "sourceRoot": "libs/ui/form/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/form/tsconfig.lib.json",
+            "project": "libs/ui/form/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/form/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -393,6 +405,18 @@
       "sourceRoot": "libs/ui/render/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/render/tsconfig.lib.json",
+            "project": "libs/ui/render/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/render/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -422,6 +446,18 @@
       "sourceRoot": "libs/ui/avatar/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/avatar/tsconfig.lib.json",
+            "project": "libs/ui/avatar/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/avatar/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -451,6 +487,18 @@
       "sourceRoot": "libs/ui/brand/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/brand/tsconfig.lib.json",
+            "project": "libs/ui/brand/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/brand/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -480,6 +528,18 @@
       "sourceRoot": "libs/ui/button/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/button/tsconfig.lib.json",
+            "project": "libs/ui/button/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/button/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -509,6 +569,18 @@
       "sourceRoot": "libs/ui/card/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/card/tsconfig.lib.json",
+            "project": "libs/ui/card/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/card/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -538,6 +610,18 @@
       "sourceRoot": "libs/ui/cart-icon/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/cart-icon/tsconfig.lib.json",
+            "project": "libs/ui/cart-icon/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/cart-icon/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -567,6 +651,18 @@
       "sourceRoot": "libs/ui/code/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/code/tsconfig.lib.json",
+            "project": "libs/ui/code/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/code/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -596,6 +692,18 @@
       "sourceRoot": "libs/ui/comment/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/comment/tsconfig.lib.json",
+            "project": "libs/ui/comment/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/comment/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -625,6 +733,18 @@
       "sourceRoot": "libs/ui/hero/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/hero/tsconfig.lib.json",
+            "project": "libs/ui/hero/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/hero/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -654,6 +774,18 @@
       "sourceRoot": "libs/ui/label/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/label/tsconfig.lib.json",
+            "project": "libs/ui/label/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/label/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -683,6 +815,18 @@
       "sourceRoot": "libs/ui/link/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/link/tsconfig.lib.json",
+            "project": "libs/ui/link/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/link/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -712,6 +856,18 @@
       "sourceRoot": "libs/ui/loading/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/loading/tsconfig.lib.json",
+            "project": "libs/ui/loading/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/loading/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -741,6 +897,18 @@
       "sourceRoot": "libs/ui/markdown/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/markdown/tsconfig.lib.json",
+            "project": "libs/ui/markdown/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/markdown/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -770,6 +938,18 @@
       "sourceRoot": "libs/ui/no-data/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/no-data/tsconfig.lib.json",
+            "project": "libs/ui/no-data/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/no-data/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -799,6 +979,18 @@
       "sourceRoot": "libs/ui/price/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/price/tsconfig.lib.json",
+            "project": "libs/ui/price/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/price/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -828,6 +1020,18 @@
       "sourceRoot": "libs/ui/timeago/src",
       "prefix": "kikstart-ui",
       "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/ui/timeago/tsconfig.lib.json",
+            "project": "libs/ui/timeago/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/ui/timeago/tsconfig.lib.prod.json"
+            }
+          }
+        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
@@ -842,6 +1046,47 @@
             "tsConfig": "libs/ui/timeago/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/ui/timeago/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "layout-docs": {
+      "projectType": "library",
+      "root": "libs/layout/docs",
+      "sourceRoot": "libs/layout/docs/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/layout/docs/tsconfig.lib.json",
+            "project": "libs/layout/docs/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/layout/docs/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/layout/docs/tsconfig.lib.json", "libs/layout/docs/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/layout/docs/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/layout/docs/jest.config.js",
+            "tsConfig": "libs/layout/docs/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/layout/docs/src/test-setup.ts"
           }
         }
       },

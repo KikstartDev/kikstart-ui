@@ -1,4 +1,4 @@
-import { UiButton } from '@kikstart-ui/ui-button'
+import { UiButton } from './ui-button'
 
 export enum UiButtonActions {
   COMMENT = 'COMMENT',

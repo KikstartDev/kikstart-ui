@@ -37,7 +37,8 @@
       "@kikstart-ui/ui-no-data": ["libs/ui/no-data/src/index.ts"],
       "@kikstart-ui/ui-price": ["libs/ui/price/src/index.ts"],
       "@kikstart-ui/ui-render": ["libs/ui/render/src/index.ts"],
-      "@kikstart-ui/ui-timeago": ["libs/ui/timeago/src/index.ts"]
+      "@kikstart-ui/ui-timeago": ["libs/ui/timeago/src/index.ts"],
+      "@kikstart-ui/layout/docs": ["libs/layout/docs/src/index.ts"]
     }
   },
   "angularCompilerOptions": {

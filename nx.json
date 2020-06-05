@@ -92,6 +92,9 @@
     },
     "ui-timeago": {
       "tags": []
+    },
+    "layout-docs": {
+      "tags": []
     }
   }
 }
