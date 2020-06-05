@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core'
 
-export type UiAvatarSizes = 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
+export type UiAvatarSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
 
 @Component({
   selector: 'ui-avatar',
@@ -9,6 +9,7 @@ export type UiAvatarSizes = 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
       [attr.alt]="alt"
       [attr.src]="avatar"
       class="avatar"
+      [class.avatar-xs]="size === 'xs'"
       [class.avatar-sm]="size === 'sm'"
       [class.avatar-md]="size === 'md'"
       [class.avatar-lg]="size === 'lg'"
@@ -22,9 +23,13 @@ export type UiAvatarSizes = 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
       .avatar {
         border-radius: 50%;
       }
-      .avatar-sm {
+      .avatar-xs {
         height: 24px;
         width: 24px;
+      }
+      .avatar-sm {
+        height: 30px;
+        width: 30px;
       }
       .avatar-md {
         height: 48px;
@@ -47,6 +52,15 @@ export type UiAvatarSizes = 'sm' | 'md' | 'lg' | 'xl' | 'xxl'
 })
 export class UiAvatarComponent {
   @Input() public alt = 'Avatar'
-  @Input() public avatar: string
+  @Input() public avatarUrl: string
   @Input() public size: UiAvatarSizes = 'md'
+
+  @Input() public set avatar(avatar: string) {
+    console.warn(`ui-avatar: The 'avatar' input is deprecated, please use 'avatarUrl'`)
+    this.avatarUrl = avatar
+  }
+
+  public get avatar(): string {
+    return this.avatarUrl
+  }
 }

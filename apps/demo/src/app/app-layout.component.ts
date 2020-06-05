@@ -47,6 +47,7 @@ export class AppLayoutComponent {
       LayoutConsoleHelper.link('/demos/ui-no-data', 'No Data', ''),
       LayoutConsoleHelper.link('/demos/ui-render', 'Render', ''),
     ]),
+    LayoutConsoleHelper.header('Layout', [LayoutConsoleHelper.link('/demos/layout-console', 'Console', 'fa-cube')]),
   ]
   public user = {
     avatarUrl: 'https://avatars3.githubusercontent.com/u/36491?v=4',

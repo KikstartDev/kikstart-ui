@@ -4,6 +4,11 @@ import { RouterModule, Routes } from '@angular/router'
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'ui-avatar' },
   {
+    path: 'layout-console',
+    loadChildren: () =>
+      import('./demos/layout-console/layout-console-demo.module').then((m) => m.LayoutConsoleDemoModule),
+  },
+  {
     path: 'ui-avatar',
     loadChildren: () => import('./demos/ui-avatar/ui-avatar-demo.module').then((m) => m.UiAvatarDemoModule),
   },
