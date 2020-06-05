@@ -23,7 +23,7 @@ export function showNxWarning(workspaceName: string) {
 }
 
 export function determinePackageManager() {
-  let packageManager = getPackageManagerFromAngularCLI()
+  const packageManager = getPackageManagerFromAngularCLI()
   if (packageManager === 'npm' || isPackageManagerInstalled(packageManager)) {
     return packageManager
   }
