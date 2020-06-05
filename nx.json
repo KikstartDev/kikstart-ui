@@ -41,6 +41,57 @@
     },
     "themes": {
       "tags": []
+    },
+    "ui-form": {
+      "tags": []
+    },
+    "ui-render": {
+      "tags": []
+    },
+    "ui-avatar": {
+      "tags": []
+    },
+    "ui-brand": {
+      "tags": []
+    },
+    "ui-button": {
+      "tags": []
+    },
+    "ui-card": {
+      "tags": []
+    },
+    "ui-cart-icon": {
+      "tags": []
+    },
+    "ui-code": {
+      "tags": []
+    },
+    "ui-comment": {
+      "tags": []
+    },
+    "ui-hero": {
+      "tags": []
+    },
+    "ui-label": {
+      "tags": []
+    },
+    "ui-link": {
+      "tags": []
+    },
+    "ui-loading": {
+      "tags": []
+    },
+    "ui-markdown": {
+      "tags": []
+    },
+    "ui-no-data": {
+      "tags": []
+    },
+    "ui-price": {
+      "tags": []
+    },
+    "ui-timeago": {
+      "tags": []
     }
   }
 }
