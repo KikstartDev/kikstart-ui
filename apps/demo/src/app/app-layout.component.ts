@@ -6,7 +6,7 @@ import { LayoutConsoleHelper } from '@kikstart-ui/layout-console'
     <console-layout>
       <console-navbar [brand]="{ navbarClasses: 'navbar-dark bg-dark' }">
         <span class="right">
-          <a routerLink="/playground/profile" class="ml-2 p-0" *ngIf="user">
+          <a routerLink="/" class="ml-2 p-0" *ngIf="user">
             <img
               [attr.src]="user?.avatarUrl"
               width="30"
@@ -34,7 +34,7 @@ export class AppLayoutComponent {
 
   public links = [
     LayoutConsoleHelper.header('Components', [
-      LayoutConsoleHelper.link('/demos/ui-avatar', 'Avatar', ''),
+      LayoutConsoleHelper.link('/demos/ui-avatar', 'Avatar', 'fa-magic'),
       LayoutConsoleHelper.link('/demos/ui-brand', 'Brand', ''),
       LayoutConsoleHelper.link('/demos/ui-button', 'Button', ''),
       LayoutConsoleHelper.link('/demos/ui-card', 'Card', ''),
