@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { map } from 'rxjs/operators';
+import { Component } from '@angular/core'
+import { ActivatedRoute } from '@angular/router'
+import { map } from 'rxjs/operators'
 
 @Component({
   template: `
@@ -17,9 +17,8 @@ export class ConsoleDummyComponent {
   data$ = this.route.data.pipe(
     map((data) => ({
       title: data.title || 'Dummy',
-      content:
-        data.content || 'This is a dummy page. Content will be added soon ™️',
-    }))
-  );
+      content: data.content || 'This is a dummy page. Content will be added soon ™️',
+    })),
+  )
   constructor(private readonly route: ActivatedRoute) {}
 }

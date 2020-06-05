@@ -1,14 +1,14 @@
-import { async, TestBed } from '@angular/core/testing';
-import { ThemesModule } from './themes.module';
+import { async, TestBed } from '@angular/core/testing'
+import { ThemesModule } from './themes.module'
 
 describe('ThemesModule', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [ThemesModule],
-    }).compileComponents();
-  }));
+    }).compileComponents()
+  }))
 
   it('should create', () => {
-    expect(ThemesModule).toBeDefined();
-  });
-});
+    expect(ThemesModule).toBeDefined()
+  })
+})

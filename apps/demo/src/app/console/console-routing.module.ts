@@ -1,17 +1,14 @@
-import { Routes } from '@angular/router';
+import { Routes } from '@angular/router'
 
-import { ConsoleComponent } from './console.component';
+import { ConsoleComponent } from './console.component'
 
 const dummyRoute = (path: string, title?: string) => ({
   path,
   data: {
     title,
   },
-  loadChildren: () =>
-    import('./console-dummy/console-dummy.module').then(
-      (m) => m.ConsoleDummyModule
-    ),
-});
+  loadChildren: () => import('./console-dummy/console-dummy.module').then((m) => m.ConsoleDummyModule),
+})
 
 export const routes: Routes = [
   {
@@ -21,9 +18,7 @@ export const routes: Routes = [
       {
         path: 'dashboard',
         loadChildren: () =>
-          import('./console-dashboard/console-dashboard.module').then(
-            (m) => m.ConsoleDashboardModule
-          ),
+          import('./console-dashboard/console-dashboard.module').then((m) => m.ConsoleDashboardModule),
       },
       dummyRoute('layouts', 'Layouts'),
       dummyRoute('themes', 'Themes'),
@@ -32,4 +27,4 @@ export const routes: Routes = [
       dummyRoute('**'),
     ],
   },
-];
+]

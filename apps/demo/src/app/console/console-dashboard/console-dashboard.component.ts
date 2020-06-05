@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
   template: `
@@ -46,5 +46,5 @@ export class ConsoleDashboardComponent {
       data: [0, 1, 8, 2, 9, 12, 0, 2, 5, 9, 5, 10, 3, 5, 0],
       gradient: ['red', 'orange', 'yellow'],
     },
-  ];
+  ]
 }

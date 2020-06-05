@@ -79,10 +79,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/demo/tsconfig.app.json",
-              "apps/demo/tsconfig.spec.json"
-            ],
+            "tsConfig": ["apps/demo/tsconfig.app.json", "apps/demo/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!apps/demo/**"]
           }
         },
@@ -133,10 +130,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/schematics/tsconfig.lib.json",
-              "libs/schematics/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/schematics/tsconfig.lib.json", "libs/schematics/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/schematics/**"]
           }
         },
@@ -203,10 +197,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/create-kikstart-ui/tsconfig.lib.json",
-              "libs/create-kikstart-ui/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/create-kikstart-ui/tsconfig.lib.json", "libs/create-kikstart-ui/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/create-kikstart-ui/**"]
           }
         },
@@ -251,10 +242,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/layout/console/tsconfig.lib.json",
-              "libs/layout/console/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/layout/console/tsconfig.lib.json", "libs/layout/console/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/layout/console/**"]
           }
         },
@@ -283,6 +271,7 @@
         "build": {
           "builder": "@nrwl/workspace:run-commands",
           "options": {
+            "outputPath": "dist/libs/themes",
             "commands": [
               {
                 "command": "npx nx run themes:build-package"
@@ -345,10 +334,7 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "libs/themes/tsconfig.lib.json",
-              "libs/themes/tsconfig.spec.json"
-            ],
+            "tsConfig": ["libs/themes/tsconfig.lib.json", "libs/themes/tsconfig.spec.json"],
             "exclude": ["**/node_modules/**", "!libs/themes/**"]
           }
         },

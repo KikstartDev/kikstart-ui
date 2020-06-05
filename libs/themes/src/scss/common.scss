@@ -1,5 +1,10 @@
-html, body { height: 100vh }
-.cursor-pointer { cursor: pointer }
+html,
+body {
+  height: 100vh;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
 
 select[multiple] option:checked {
   background: var(--light) linear-gradient(0deg, var(--light) 0%, var(--light) 100%);

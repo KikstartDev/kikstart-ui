@@ -1,12 +1,4 @@
-import {
-  apply,
-  applyTemplates,
-  chain,
-  mergeWith,
-  move,
-  Rule,
-  url,
-} from '@angular-devkit/schematics';
+import { apply, applyTemplates, chain, mergeWith, move, Rule, url } from '@angular-devkit/schematics'
 import {
   addProjectToNxJsonInTree,
   names,
@@ -15,33 +7,27 @@ import {
   ProjectType,
   toFileName,
   updateWorkspace,
-} from '@nrwl/workspace';
-import { SchematicsSchematicSchema } from './schema';
+} from '@nrwl/workspace'
+import { SchematicsSchematicSchema } from './schema'
 
 /**
  * Depending on your needs, you can change this to either `Library` or `Application`
  */
-const projectType = ProjectType.Library;
+const projectType = ProjectType.Library
 
 interface NormalizedSchema extends SchematicsSchematicSchema {
-  projectName: string;
-  projectRoot: string;
-  projectDirectory: string;
-  parsedTags: string[];
+  projectName: string
+  projectRoot: string
+  projectDirectory: string
+  parsedTags: string[]
 }
 
-function normalizeOptions(
-  options: SchematicsSchematicSchema
-): NormalizedSchema {
-  const name = toFileName(options.name);
-  const projectDirectory = options.directory
-    ? `${toFileName(options.directory)}/${name}`
-    : name;
-  const projectName = projectDirectory.replace(new RegExp('/', 'g'), '-');
-  const projectRoot = `${projectRootDir(projectType)}/${projectDirectory}`;
-  const parsedTags = options.tags
-    ? options.tags.split(',').map((s) => s.trim())
-    : [];
+function normalizeOptions(options: SchematicsSchematicSchema): NormalizedSchema {
+  const name = toFileName(options.name)
+  const projectDirectory = options.directory ? `${toFileName(options.directory)}/${name}` : name
+  const projectName = projectDirectory.replace(new RegExp('/', 'g'), '-')
+  const projectRoot = `${projectRootDir(projectType)}/${projectDirectory}`
+  const parsedTags = options.tags ? options.tags.split(',').map((s) => s.trim()) : []
 
   return {
     ...options,
@@ -49,7 +35,7 @@ function normalizeOptions(
     projectRoot,
     projectDirectory,
     parsedTags,
-  };
+  }
 }
 
 function addFiles(options: NormalizedSchema): Rule {
@@ -61,12 +47,12 @@ function addFiles(options: NormalizedSchema): Rule {
         offsetFromRoot: offsetFromRoot(options.projectRoot),
       }),
       move(options.projectRoot),
-    ])
-  );
+    ]),
+  )
 }
 
 export default function (options: SchematicsSchematicSchema): Rule {
-  const normalizedOptions = normalizeOptions(options);
+  const normalizedOptions = normalizeOptions(options)
   return chain([
     updateWorkspace((workspace) => {
       workspace.projects
@@ -79,11 +65,11 @@ export default function (options: SchematicsSchematicSchema): Rule {
         .targets.add({
           name: 'build',
           builder: '@kikstart-ui/schematics:build',
-        });
+        })
     }),
     addProjectToNxJsonInTree(normalizedOptions.projectName, {
       tags: normalizedOptions.parsedTags,
     }),
     addFiles(normalizedOptions),
-  ]);
+  ])
 }
