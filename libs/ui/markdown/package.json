@@ -1,6 +1,6 @@
 {
   "name": "@kikstart-ui/ui-markdown",
-  "version": "1.3.1",
+  "version": "1.4.0",
   "peerDependencies": {
     "@angular/common": "^9.1.9",
     "@angular/core": "^9.1.9"
