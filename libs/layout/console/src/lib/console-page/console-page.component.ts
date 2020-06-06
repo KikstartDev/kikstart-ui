@@ -23,7 +23,7 @@ import { ConsoleLink } from '../console-sidebar/console-link'
         <console-tabs [tabs]="tabs"></console-tabs>
       </div>
       <div class="flex-grow-1 h-100">
-        <div class="container-md mt-3 mt-md-5">
+        <div class="container-md mt-3 mt-lx-5">
           <ng-content></ng-content>
         </div>
       </div>

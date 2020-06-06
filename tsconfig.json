@@ -19,6 +19,7 @@
     "paths": {
       "@kikstart-ui/create-kikstart-ui": ["libs/create-kikstart-ui/src/index.ts"],
       "@kikstart-ui/layout-console": ["libs/layout/console/src/index.ts"],
+      "@kikstart-ui/lib-editorjs": ["libs/lib/editorjs/src/index.ts"],
       "@kikstart-ui/schematics": ["libs/schematics/src/index.ts"],
       "@kikstart-ui/themes": ["libs/themes/src/index.ts"],
       "@kikstart-ui/ui-avatar": ["libs/ui/avatar/src/index.ts"],

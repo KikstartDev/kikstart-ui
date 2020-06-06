@@ -132,9 +132,11 @@ export class ConsoleSidebarComponent implements OnInit {
 
   getLinks() {
     return this.links?.map((link) => {
-      const activeChildren = link.children?.find((child) =>
-        child.path.startsWith('/') ? false : this.isRouteActive(this.baseLink + '/' + child.path),
-      )
+      const activeChildren = link.children?.find((child) => {
+        const route = this.baseLink + '/' + child.path
+
+        return this.isRouteActive(route.replace(/\/\//g, '/'))
+      })
 
       this.show[link.label] = !!activeChildren
       return {

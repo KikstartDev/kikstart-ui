@@ -34,7 +34,7 @@ export class AppLayoutComponent {
 
   public links = [
     LayoutConsoleHelper.header('Components', [
-      LayoutConsoleHelper.link('/demos/ui-avatar', 'Avatar', 'fa-magic'),
+      LayoutConsoleHelper.link('/demos/ui-avatar', 'Avatar', ''),
       LayoutConsoleHelper.link('/demos/ui-brand', 'Brand', ''),
       LayoutConsoleHelper.link('/demos/ui-button', 'Button', ''),
       LayoutConsoleHelper.link('/demos/ui-card', 'Card', ''),
@@ -47,7 +47,14 @@ export class AppLayoutComponent {
       LayoutConsoleHelper.link('/demos/ui-no-data', 'No Data', ''),
       LayoutConsoleHelper.link('/demos/ui-render', 'Render', ''),
     ]),
-    LayoutConsoleHelper.header('Layout', [LayoutConsoleHelper.link('/demos/layout-console', 'Console', 'fa-cube')]),
+    LayoutConsoleHelper.header('Layout', [
+      //
+      LayoutConsoleHelper.link('/demos/layout-console', 'Console', ''),
+    ]),
+    LayoutConsoleHelper.header('Libraries', [
+      //
+      LayoutConsoleHelper.link('/demos/lib-editorjs', 'Editor.js', ''),
+    ]),
   ]
   public user = {
     avatarUrl: 'https://avatars3.githubusercontent.com/u/36491?v=4',

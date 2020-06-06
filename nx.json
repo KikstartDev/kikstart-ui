@@ -101,6 +101,9 @@
     },
     "ui-footer": {
       "tags": []
+    },
+    "lib-editorjs": {
+      "tags": []
     }
   }
 }

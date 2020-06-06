@@ -9,6 +9,10 @@ const routes: Routes = [
       import('./demos/layout-console/layout-console-demo.module').then((m) => m.LayoutConsoleDemoModule),
   },
   {
+    path: 'lib-editorjs',
+    loadChildren: () => import('./demos/lib-editorjs/lib-editorjs-demo.module').then((m) => m.LibEditorjsDemoModule),
+  },
+  {
     path: 'ui-avatar',
     loadChildren: () => import('./demos/ui-avatar/ui-avatar-demo.module').then((m) => m.UiAvatarDemoModule),
   },
