@@ -14,6 +14,7 @@ import { ConsoleLink } from '../console-sidebar/console-link'
         </div>
         <div class="align-self-center px-3 p-2 flex-grow-1">
           <span [style.font-size.rem]="2">{{ title }}</span>
+          <ng-content select=".left"></ng-content>
         </div>
         <div class="align-self-center px-3 p-2">
           <ng-content select=".right"></ng-content>
