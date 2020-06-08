@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
+import { UiButtonModule } from '@kikstart-ui/ui-button'
 import { UiFormModule } from '@kikstart-ui/ui-form'
 
 import { DemoSharedModule } from '../../demo-shared.module'
@@ -12,6 +13,7 @@ import { components, config } from './ui-form-demo.config'
     DemoSharedModule,
     UiFormModule,
     RouterModule.forChild([{ path: '', component: DemoComponent, data: config }]),
+    UiButtonModule,
   ],
   declarations: [...components],
   entryComponents: [...components],

@@ -4,7 +4,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { FormlyBootstrapModule } from '@ngx-formly/bootstrap'
 
 import { ConfigOption, FormlyModule } from '@ngx-formly/core'
+import { ModalModule } from 'ngx-bootstrap/modal'
+import { UiFormDialogComponent } from './ui-form-dialog.component'
 import { UiFormComponent } from './ui-form.component'
+import { UiFormService } from './ui-form.service'
 
 import {
   emailValidator,
@@ -29,8 +32,16 @@ const config: ConfigOption = {
 }
 
 @NgModule({
-  imports: [CommonModule, FormsModule, ReactiveFormsModule, FormlyModule.forRoot(config), FormlyBootstrapModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    FormlyModule.forRoot(config),
+    FormlyBootstrapModule,
+    ModalModule.forRoot(),
+  ],
   exports: [FormsModule, ReactiveFormsModule, FormlyModule, FormlyBootstrapModule, UiFormComponent],
-  declarations: [UiFormComponent],
+  declarations: [UiFormComponent, UiFormDialogComponent],
+  providers: [UiFormService],
 })
 export class UiFormModule {}

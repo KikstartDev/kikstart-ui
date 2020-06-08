@@ -1,9 +1,10 @@
 import { DemoHelper } from '../../demo.helper'
 
+import { FormDialogComponent } from './form-dialog/form-dialog.component'
 import { FormSimpleComponent } from './form-simple/form-simple.component'
 import { FormLoginComponent } from './form-login/form-login.component'
 
-export const components = [FormLoginComponent, FormSimpleComponent]
+export const components = [FormDialogComponent, FormLoginComponent, FormSimpleComponent]
 
 const base = 'demos/ui-form'
 
@@ -26,6 +27,13 @@ and defaults.
       component: FormLoginComponent,
       path: `${base}/form-login`,
       files: ['form-login.component.ts', 'form-login.component.html'],
+    }),
+    DemoHelper.config({
+      title: 'Form Dialog',
+      description: `This is an example of a form in a dialog`,
+      component: FormDialogComponent,
+      path: `${base}/form-dialog`,
+      files: ['form-dialog.component.ts'],
     }),
   ],
 }
