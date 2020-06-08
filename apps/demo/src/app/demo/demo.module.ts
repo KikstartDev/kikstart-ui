@@ -50,6 +50,10 @@ const routes: Routes = [
     loadChildren: () => import('./demos/ui-hero/ui-hero-demo.module').then((m) => m.UiHeroDemoModule),
   },
   {
+    path: 'ui-list',
+    loadChildren: () => import('./demos/ui-list/ui-list-demo.module').then((m) => m.UiListDemoModule),
+  },
+  {
     path: 'ui-markdown',
     loadChildren: () => import('./demos/ui-markdown/ui-markdown-demo.module').then((m) => m.UiMarkdownDemoModule),
   },
@@ -60,6 +64,10 @@ const routes: Routes = [
   {
     path: 'ui-render',
     loadChildren: () => import('./demos/ui-render/ui-render-demo.module').then((m) => m.UiRenderDemoModule),
+  },
+  {
+    path: 'ui-sidebar',
+    loadChildren: () => import('./demos/ui-sidebar/ui-sidebar-demo.module').then((m) => m.UiSidebarDemoModule),
   },
 ]
 

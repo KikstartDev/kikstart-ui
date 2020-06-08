@@ -104,6 +104,12 @@
     },
     "lib-editorjs": {
       "tags": []
+    },
+    "ui-sidebar": {
+      "tags": []
+    },
+    "ui-list": {
+      "tags": []
     }
   }
 }

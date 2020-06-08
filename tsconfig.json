@@ -40,8 +40,10 @@
       "@kikstart-ui/ui-render": ["libs/ui/render/src/index.ts"],
       "@kikstart-ui/ui-timeago": ["libs/ui/timeago/src/index.ts"],
       "@kikstart-ui/layout/docs": ["libs/layout/docs/src/index.ts"],
-      "@kikstart-ui/ui/tabs": ["libs/ui/tabs/src/index.ts"],
-      "@kikstart-ui/ui/footer": ["libs/ui/footer/src/index.ts"]
+      "@kikstart-ui/ui-tabs": ["libs/ui/tabs/src/index.ts"],
+      "@kikstart-ui/ui-footer": ["libs/ui/footer/src/index.ts"],
+      "@kikstart-ui/ui-sidebar": ["libs/ui/sidebar/src/index.ts"],
+      "@kikstart-ui/ui-list": ["libs/ui/list/src/index.ts"]
     }
   },
   "angularCompilerOptions": {
