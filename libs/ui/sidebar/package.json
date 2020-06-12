@@ -1,6 +1,6 @@
 {
   "name": "@kikstart-ui/ui-sidebar",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "peerDependencies": {
     "@angular/common": "^9.1.9",
     "@angular/core": "^9.1.9"
