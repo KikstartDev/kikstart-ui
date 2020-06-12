@@ -19,6 +19,7 @@
     "paths": {
       "@kikstart-ui/create-kikstart-ui": ["libs/create-kikstart-ui/src/index.ts"],
       "@kikstart-ui/layout-console": ["libs/layout/console/src/index.ts"],
+      "@kikstart-ui/layout-docs": ["libs/layout/docs/src/index.ts"],
       "@kikstart-ui/lib-editorjs": ["libs/lib/editorjs/src/index.ts"],
       "@kikstart-ui/schematics": ["libs/schematics/src/index.ts"],
       "@kikstart-ui/themes": ["libs/themes/src/index.ts"],
@@ -29,21 +30,21 @@
       "@kikstart-ui/ui-cart-icon": ["libs/ui/cart-icon/src/index.ts"],
       "@kikstart-ui/ui-code": ["libs/ui/code/src/index.ts"],
       "@kikstart-ui/ui-comment": ["libs/ui/comment/src/index.ts"],
+      "@kikstart-ui/ui-footer": ["libs/ui/footer/src/index.ts"],
       "@kikstart-ui/ui-form": ["libs/ui/form/src/index.ts"],
       "@kikstart-ui/ui-hero": ["libs/ui/hero/src/index.ts"],
+      "@kikstart-ui/ui-icon": ["libs/ui/icon/src/index.ts"],
       "@kikstart-ui/ui-label": ["libs/ui/label/src/index.ts"],
       "@kikstart-ui/ui-link": ["libs/ui/link/src/index.ts"],
+      "@kikstart-ui/ui-list": ["libs/ui/list/src/index.ts"],
       "@kikstart-ui/ui-loading": ["libs/ui/loading/src/index.ts"],
       "@kikstart-ui/ui-markdown": ["libs/ui/markdown/src/index.ts"],
       "@kikstart-ui/ui-no-data": ["libs/ui/no-data/src/index.ts"],
       "@kikstart-ui/ui-price": ["libs/ui/price/src/index.ts"],
       "@kikstart-ui/ui-render": ["libs/ui/render/src/index.ts"],
-      "@kikstart-ui/ui-timeago": ["libs/ui/timeago/src/index.ts"],
-      "@kikstart-ui/layout/docs": ["libs/layout/docs/src/index.ts"],
-      "@kikstart-ui/ui-tabs": ["libs/ui/tabs/src/index.ts"],
-      "@kikstart-ui/ui-footer": ["libs/ui/footer/src/index.ts"],
       "@kikstart-ui/ui-sidebar": ["libs/ui/sidebar/src/index.ts"],
-      "@kikstart-ui/ui-list": ["libs/ui/list/src/index.ts"]
+      "@kikstart-ui/ui-tabs": ["libs/ui/tabs/src/index.ts"],
+      "@kikstart-ui/ui-timeago": ["libs/ui/timeago/src/index.ts"]
     }
   },
   "angularCompilerOptions": {

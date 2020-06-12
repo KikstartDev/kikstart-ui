@@ -43,6 +43,7 @@ export class AppLayoutComponent {
       LayoutConsoleHelper.link('/demos/ui-comment-form', 'Comment Form', ''),
       LayoutConsoleHelper.link('/demos/ui-form', 'Form', ''),
       LayoutConsoleHelper.link('/demos/ui-hero', 'Hero', ''),
+      LayoutConsoleHelper.link('/demos/ui-icon', 'Icon', ''),
       LayoutConsoleHelper.link('/demos/ui-list', 'List', ''),
       LayoutConsoleHelper.link('/demos/ui-markdown', 'Markdown', ''),
       LayoutConsoleHelper.link('/demos/ui-no-data', 'No Data', ''),

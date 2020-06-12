@@ -50,6 +50,10 @@ const routes: Routes = [
     loadChildren: () => import('./demos/ui-hero/ui-hero-demo.module').then((m) => m.UiHeroDemoModule),
   },
   {
+    path: 'ui-icon',
+    loadChildren: () => import('./demos/ui-icon/ui-icon-demo.module').then((m) => m.UiIconDemoModule),
+  },
+  {
     path: 'ui-list',
     loadChildren: () => import('./demos/ui-list/ui-list-demo.module').then((m) => m.UiListDemoModule),
   },
