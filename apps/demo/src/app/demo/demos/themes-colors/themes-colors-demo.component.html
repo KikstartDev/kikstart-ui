@@ -1,0 +1,22 @@
+<div class="mb-5">
+  <ng-container *ngFor="let color of colors; let i = index">
+    <ng-container *ngIf="i % 30 === 0">
+      <div class="mb-5"></div>
+    </ng-container>
+    <span class="p-3 mr-1" [class]="'bg-' + color.name" [attr.title]="color.name"> </span>
+  </ng-container>
+</div>
+
+<div class="row mb-5">
+  <ng-container *ngFor="let color of colors">
+    <div class="col-md-6 mb-3 mb-md-5">
+      <h4 class="my-0 py-4 text-{{ color.name }} text-center border border-{{ color.name }} ">{{ color.name }}</h4>
+      <div class="py-5 text-center cursor-pointer" [class]="'bg-' + color.name">
+        <h4 class="mb-4">{{ color.color }}</h4>
+        <pre>bg-{{ color.name }}</pre>
+        <pre>border-{{ color.name }}</pre>
+        <pre>text-{{ color.name }}</pre>
+      </div>
+    </div>
+  </ng-container>
+</div>

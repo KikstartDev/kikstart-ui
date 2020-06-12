@@ -330,6 +330,18 @@
               },
               {
                 "command": "npx sass -s compressed ./dist/libs/themes/scss/light/index.scss ./dist/libs/themes/css/light.min.css"
+              },
+              {
+                "command": "npx sass ./dist/libs/themes/scss/colors.scss ./dist/libs/themes/css/colors.css"
+              },
+              {
+                "command": "npx sass -s compressed ./dist/libs/themes/scss/colors.scss ./dist/libs/themes/css/colors.min.css"
+              },
+              {
+                "command": "npx sass ./dist/libs/themes/scss/gradients.scss ./dist/libs/themes/css/gradients.css"
+              },
+              {
+                "command": "npx sass -s compressed ./dist/libs/themes/scss/gradients.scss ./dist/libs/themes/css/gradients.min.css"
               }
             ],
             "parallel": true

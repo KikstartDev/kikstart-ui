@@ -13,6 +13,15 @@ const routes: Routes = [
     loadChildren: () => import('./demos/lib-editorjs/lib-editorjs-demo.module').then((m) => m.LibEditorjsDemoModule),
   },
   {
+    path: 'themes-colors',
+    loadChildren: () => import('./demos/themes-colors/themes-colors-demo.module').then((m) => m.ThemesColorsDemoModule),
+  },
+  {
+    path: 'themes-gradients',
+    loadChildren: () =>
+      import('./demos/themes-gradients/themes-gradients-demo.module').then((m) => m.ThemesGradientsDemoModule),
+  },
+  {
     path: 'ui-avatar',
     loadChildren: () => import('./demos/ui-avatar/ui-avatar-demo.module').then((m) => m.UiAvatarDemoModule),
   },

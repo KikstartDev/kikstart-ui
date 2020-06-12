@@ -58,6 +58,11 @@ export class AppLayoutComponent {
       //
       LayoutConsoleHelper.link('/demos/lib-editorjs', 'Editor.js', ''),
     ]),
+    LayoutConsoleHelper.header('Themes', [
+      //
+      LayoutConsoleHelper.link('/demos/themes-colors', 'Colors', ''),
+      LayoutConsoleHelper.link('/demos/themes-gradients', 'Gradients', ''),
+    ]),
   ]
   public user = {
     avatarUrl: 'https://avatars3.githubusercontent.com/u/36491?v=4',

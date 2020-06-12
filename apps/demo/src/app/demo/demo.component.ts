@@ -14,7 +14,7 @@ import { tap } from 'rxjs/operators'
                 <h5 class="card-title my-0">{{ demo.title }}</h5>
               </ui-card-header>
               <ui-card-body *ngIf="demo.description">
-                <div [innerHTML]="demo.description"></div>
+                <ui-markdown [data]="demo.description"></ui-markdown>
               </ui-card-body>
               <tabset>
                 <tab heading="Example">

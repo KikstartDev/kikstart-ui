@@ -1,0 +1,924 @@
+/*!
+flatuicolor.css - http://www.clsmedia.pl
+Licensed under the MIT license - http://opensource.org/licenses/MIT
+Copyright (c) 2014 Adam Skorupka
+Colors by: http://www.flatuicolorpicker.com/
+*/
+
+/* BACKGROUND COLORS */
+
+.bg-chestnut-rose {
+  background-color: #d24d57;
+}
+.bg-pomegranate {
+  background-color: #f22613;
+}
+.bg-red {
+  background-color: #ff0000;
+}
+.bg-thunderbird {
+  background-color: #d91e18;
+}
+.bg-old-brick {
+  background-color: #96281b;
+}
+.bg-flamingo {
+  background-color: #ef4836;
+}
+.bg-valencia {
+  background-color: #d64541;
+}
+.bg-tall-poppy {
+  background-color: #c0392b;
+}
+.bg-monza {
+  background-color: #cf000f;
+}
+.bg-cinnabar {
+  background-color: #e74c3c;
+}
+.bg-razzmatazz {
+  background-color: #db0a5b;
+}
+.bg-derby {
+  background-color: #ffecdb;
+}
+.bg-sunset-orange {
+  background-color: #f64747;
+}
+.bg-wax-flower {
+  background-color: #f1a9a0;
+}
+.bg-cabaret {
+  background-color: #d2527f;
+}
+.bg-new-york-pink {
+  background-color: #e08283;
+}
+.bg-radical-red {
+  background-color: #f62459;
+}
+.bg-sunglo {
+  background-color: #e26a6a;
+}
+.bg-snuff {
+  background-color: #dcc6e0;
+}
+.bg-rebeccapurple {
+  background-color: #663399;
+}
+.bg-honey-flower {
+  background-color: #674172;
+}
+.bg-wistful {
+  background-color: #aea8d3;
+}
+.bg-plum {
+  background-color: #913d88;
+}
+.bg-seance {
+  background-color: #9a12b3;
+}
+.bg-medium-purple {
+  background-color: #bf55ec;
+}
+.bg-light-wisteria {
+  background-color: #be90d4;
+}
+.bg-studio {
+  background-color: #8e44ad;
+}
+.bg-wisteria {
+  background-color: #9b59b6;
+}
+.bg-san-marino {
+  background-color: #446cb3;
+}
+.bg-alice-blue {
+  background-color: #e4f1fe;
+}
+.bg-royal-blue {
+  background-color: #4183d7;
+}
+.bg-picton-blue {
+  background-color: #59abe3;
+}
+.bg-spray {
+  background-color: #81cfe0;
+}
+.bg-shakespeare {
+  background-color: #52b3d9;
+}
+.bg-humming-bird {
+  background-color: #c5eff7;
+}
+.bg-picton-blue {
+  background-color: #22a7f0;
+}
+.bg-curious-blue {
+  background-color: #3498db;
+}
+.bg-madison {
+  background-color: #2c3e50;
+}
+.bg-dodger-blue {
+  background-color: #19b5fe;
+}
+.bg-ming {
+  background-color: #336e7b;
+}
+.bg-ebony-clay {
+  background-color: #22313f;
+}
+.bg-malibu {
+  background-color: #6bb9f0;
+}
+.bg-curious-blue {
+  background-color: #1e8bc3;
+}
+.bg-chambray {
+  background-color: #3a539b;
+}
+.bg-pickled-bluewood {
+  background-color: #34495e;
+}
+.bg-hoki {
+  background-color: #67809f;
+}
+.bg-jelly-bean {
+  background-color: #2574a9;
+}
+.bg-jacksons-purple {
+  background-color: #1f3a93;
+}
+.bg-jordy-blue {
+  background-color: #89c4f4;
+}
+.bg-steel-blue {
+  background-color: #4b77be;
+}
+.bg-fountain-blue {
+  background-color: #5c97bf;
+}
+.bg-medium-turquoise {
+  background-color: #4ecdc4;
+}
+.bg-aqua-island {
+  background-color: #a2ded0;
+}
+.bg-gossip {
+  background-color: #87d37c;
+}
+.bg-dark-sea-green {
+  background-color: #90c695;
+}
+.bg-eucalyptus {
+  background-color: #26a65b;
+}
+.bg-caribbean-green {
+  background-color: #03c9a9;
+}
+.bg-silver-tree {
+  background-color: #68c3a3;
+}
+.bg-downy {
+  background-color: #65c6bb;
+}
+.bg-mountain-meadow {
+  background-color: #1bbc9b;
+}
+.bg-light-sea-green {
+  background-color: #1ba39c;
+}
+.bg-medium-aquamarine {
+  background-color: #66cc99;
+}
+.bg-turquoise {
+  background-color: #36d7b7;
+}
+.bg-madang {
+  background-color: #c8f7c5;
+}
+.bg-riptide {
+  background-color: #86e2d5;
+}
+.bg-shamrock {
+  background-color: #2ecc71;
+}
+.bg-mountain-meadow {
+  background-color: #16a085;
+}
+.bg-emerald {
+  background-color: #3fc380;
+}
+.bg-green-haze {
+  background-color: #019875;
+}
+.bg-free-speech-aquamarine {
+  background-color: #03a678;
+}
+.bg-ocean-green {
+  background-color: #4daf7c;
+}
+.bg-niagara {
+  background-color: #2abb9b;
+}
+.bg-jade {
+  background-color: #00b16a;
+}
+.bg-salem {
+  background-color: #1e824c;
+}
+.bg-observatory {
+  background-color: #049372;
+}
+.bg-jungle-green {
+  background-color: #26c281;
+}
+.bg-cape-honey {
+  background-color: #fde3a7;
+}
+.bg-california {
+  background-color: #f89406;
+}
+.bg-fire-bush {
+  background-color: #eb9532;
+}
+.bg-tahiti-gold {
+  background-color: #e87e04;
+}
+.bg-casablanca {
+  background-color: #f4b350;
+}
+.bg-crusta {
+  background-color: #f2784b;
+}
+.bg-jaffa {
+  background-color: #eb974e;
+}
+.bg-lightning-yellow {
+  background-color: #f5ab35;
+}
+.bg-burnt-orange {
+  background-color: #d35400;
+}
+.bg-buttercup {
+  background-color: #f39c12;
+}
+.bg-ecstasy {
+  background-color: #f9690e;
+}
+.bg-sandstorm {
+  background-color: #f9bf3b;
+}
+.bg-jaffa {
+  background-color: #f27935;
+}
+.bg-zest {
+  background-color: #e67e22;
+}
+.bg-white-smoke {
+  background-color: #ececec;
+}
+.bg-lynch {
+  background-color: #6c7a89;
+}
+.bg-pumice {
+  background-color: #d2d7d3;
+}
+.bg-gallery {
+  background-color: #eeeeee;
+}
+.bg-silver-sand {
+  background-color: #bdc3c7;
+}
+.bg-porcelain {
+  background-color: #ecf0f1;
+}
+.bg-cascade {
+  background-color: #95a5a6;
+}
+.bg-iron {
+  background-color: #dadfe1;
+}
+.bg-edward {
+  background-color: #abb7b7;
+}
+.bg-cararra {
+  background-color: #f2f1ef;
+}
+.bg-silver {
+  background-color: #bfbfbf;
+}
+
+/* BORDER COLORS */
+
+.border-chestnut-rose {
+  border-color: #d24d57 !important;
+}
+.border-pomegranate {
+  border-color: #f22613 !important;
+}
+.border-red {
+  border-color: #ff0000 !important;
+}
+.border-thunderbird {
+  border-color: #d91e18 !important;
+}
+.border-old-brick {
+  border-color: #96281b !important;
+}
+.border-flamingo {
+  border-color: #ef4836 !important;
+}
+.border-valencia {
+  border-color: #d64541 !important;
+}
+.border-tall-poppy {
+  border-color: #c0392b !important;
+}
+.border-monza {
+  border-color: #cf000f !important;
+}
+.border-cinnabar {
+  border-color: #e74c3c !important;
+}
+.border-razzmatazz {
+  border-color: #db0a5b !important;
+}
+.border-derby {
+  border-color: #ffecdb !important;
+}
+.border-sunset-orange {
+  border-color: #f64747 !important;
+}
+.border-wax-flower {
+  border-color: #f1a9a0 !important;
+}
+.border-cabaret {
+  border-color: #d2527f !important;
+}
+.border-new-york-pink {
+  border-color: #e08283 !important;
+}
+.border-radical-red {
+  border-color: #f62459 !important;
+}
+.border-sunglo {
+  border-color: #e26a6a !important;
+}
+.border-snuff {
+  border-color: #dcc6e0 !important;
+}
+.border-rebeccapurple {
+  border-color: #663399 !important;
+}
+.border-honey-flower {
+  border-color: #674172 !important;
+}
+.border-wistful {
+  border-color: #aea8d3 !important;
+}
+.border-plum {
+  border-color: #913d88 !important;
+}
+.border-seance {
+  border-color: #9a12b3 !important;
+}
+.border-medium-purple {
+  border-color: #bf55ec !important;
+}
+.border-light-wisteria {
+  border-color: #be90d4 !important;
+}
+.border-studio {
+  border-color: #8e44ad !important;
+}
+.border-wisteria {
+  border-color: #9b59b6 !important;
+}
+.border-san-marino {
+  border-color: #446cb3 !important;
+}
+.border-alice-blue {
+  border-color: #e4f1fe !important;
+}
+.border-royal-blue {
+  border-color: #4183d7 !important;
+}
+.border-picton-blue {
+  border-color: #59abe3 !important;
+}
+.border-spray {
+  border-color: #81cfe0 !important;
+}
+.border-shakespeare {
+  border-color: #52b3d9 !important;
+}
+.border-humming-bird {
+  border-color: #c5eff7 !important;
+}
+.border-picton-blue {
+  border-color: #22a7f0 !important;
+}
+.border-curious-blue {
+  border-color: #3498db !important;
+}
+.border-madison {
+  border-color: #2c3e50 !important;
+}
+.border-dodger-blue {
+  border-color: #19b5fe !important;
+}
+.border-ming {
+  border-color: #336e7b !important;
+}
+.border-ebony-clay {
+  border-color: #22313f !important;
+}
+.border-malibu {
+  border-color: #6bb9f0 !important;
+}
+.border-curious-blue {
+  border-color: #1e8bc3 !important;
+}
+.border-chambray {
+  border-color: #3a539b !important;
+}
+.border-pickled-bluewood {
+  border-color: #34495e !important;
+}
+.border-hoki {
+  border-color: #67809f !important;
+}
+.border-jelly-bean {
+  border-color: #2574a9 !important;
+}
+.border-jacksons-purple {
+  border-color: #1f3a93 !important;
+}
+.border-jordy-blue {
+  border-color: #89c4f4 !important;
+}
+.border-steel-blue {
+  border-color: #4b77be !important;
+}
+.border-fountain-blue {
+  border-color: #5c97bf !important;
+}
+.border-medium-turquoise {
+  border-color: #4ecdc4 !important;
+}
+.border-aqua-island {
+  border-color: #a2ded0 !important;
+}
+.border-gossip {
+  border-color: #87d37c !important;
+}
+.border-dark-sea-green {
+  border-color: #90c695 !important;
+}
+.border-eucalyptus {
+  border-color: #26a65b !important;
+}
+.border-caribbean-green {
+  border-color: #03c9a9 !important;
+}
+.border-silver-tree {
+  border-color: #68c3a3 !important;
+}
+.border-downy {
+  border-color: #65c6bb !important;
+}
+.border-mountain-meadow {
+  border-color: #1bbc9b !important;
+}
+.border-light-sea-green {
+  border-color: #1ba39c !important;
+}
+.border-medium-aquamarine {
+  border-color: #66cc99 !important;
+}
+.border-turquoise {
+  border-color: #36d7b7 !important;
+}
+.border-madang {
+  border-color: #c8f7c5 !important;
+}
+.border-riptide {
+  border-color: #86e2d5 !important;
+}
+.border-shamrock {
+  border-color: #2ecc71 !important;
+}
+.border-mountain-meadow {
+  border-color: #16a085 !important;
+}
+.border-emerald {
+  border-color: #3fc380 !important;
+}
+.border-green-haze {
+  border-color: #019875 !important;
+}
+.border-free-speech-aquamarine {
+  border-color: #03a678 !important;
+}
+.border-ocean-green {
+  border-color: #4daf7c !important;
+}
+.border-niagara {
+  border-color: #2abb9b !important;
+}
+.border-jade {
+  border-color: #00b16a !important;
+}
+.border-salem {
+  border-color: #1e824c !important;
+}
+.border-observatory {
+  border-color: #049372 !important;
+}
+.border-jungle-green {
+  border-color: #26c281 !important;
+}
+.border-cape-honey {
+  border-color: #fde3a7 !important;
+}
+.border-california {
+  border-color: #f89406 !important;
+}
+.border-fire-bush {
+  border-color: #eb9532 !important;
+}
+.border-tahiti-gold {
+  border-color: #e87e04 !important;
+}
+.border-casablanca {
+  border-color: #f4b350 !important;
+}
+.border-crusta {
+  border-color: #f2784b !important;
+}
+.border-jaffa {
+  border-color: #eb974e !important;
+}
+.border-lightning-yellow {
+  border-color: #f5ab35 !important;
+}
+.border-burnt-orange {
+  border-color: #d35400 !important;
+}
+.border-buttercup {
+  border-color: #f39c12 !important;
+}
+.border-ecstasy {
+  border-color: #f9690e !important;
+}
+.border-sandstorm {
+  border-color: #f9bf3b !important;
+}
+.border-jaffa {
+  border-color: #f27935 !important;
+}
+.border-zest {
+  border-color: #e67e22 !important;
+}
+.border-white-smoke {
+  border-color: #ececec !important;
+}
+.border-lynch {
+  border-color: #6c7a89 !important;
+}
+.border-pumice {
+  border-color: #d2d7d3 !important;
+}
+.border-gallery {
+  border-color: #eeeeee !important;
+}
+.border-silver-sand {
+  border-color: #bdc3c7 !important;
+}
+.border-porcelain {
+  border-color: #ecf0f1 !important;
+}
+.border-cascade {
+  border-color: #95a5a6 !important;
+}
+.border-iron {
+  border-color: #dadfe1 !important;
+}
+.border-edward {
+  border-color: #abb7b7 !important;
+}
+.border-cararra {
+  border-color: #f2f1ef !important;
+}
+.border-silver {
+  border-color: #bfbfbf !important;
+}
+
+/* TEXT COLORS */
+
+.text-chestnut-rose {
+  color: #d24d57;
+}
+.text-pomegranate {
+  color: #f22613;
+}
+.text-red {
+  color: #ff0000;
+}
+.text-thunderbird {
+  color: #d91e18;
+}
+.text-old-brick {
+  color: #96281b;
+}
+.text-flamingo {
+  color: #ef4836;
+}
+.text-valencia {
+  color: #d64541;
+}
+.text-tall-poppy {
+  color: #c0392b;
+}
+.text-monza {
+  color: #cf000f;
+}
+.text-cinnabar {
+  color: #e74c3c;
+}
+.text-razzmatazz {
+  color: #db0a5b;
+}
+.text-derby {
+  color: #ffecdb;
+}
+.text-sunset-orange {
+  color: #f64747;
+}
+.text-wax-flower {
+  color: #f1a9a0;
+}
+.text-cabaret {
+  color: #d2527f;
+}
+.text-new-york-pink {
+  color: #e08283;
+}
+.text-radical-red {
+  color: #f62459;
+}
+.text-sunglo {
+  color: #e26a6a;
+}
+.text-snuff {
+  color: #dcc6e0;
+}
+.text-rebeccapurple {
+  color: #663399;
+}
+.text-honey-flower {
+  color: #674172;
+}
+.text-wistful {
+  color: #aea8d3;
+}
+.text-plum {
+  color: #913d88;
+}
+.text-seance {
+  color: #9a12b3;
+}
+.text-medium-purple {
+  color: #bf55ec;
+}
+.text-light-wisteria {
+  color: #be90d4;
+}
+.text-studio {
+  color: #8e44ad;
+}
+.text-wisteria {
+  color: #9b59b6;
+}
+.text-san-marino {
+  color: #446cb3;
+}
+.text-alice-blue {
+  color: #e4f1fe;
+}
+.text-royal-blue {
+  color: #4183d7;
+}
+.text-picton-blue {
+  color: #59abe3;
+}
+.text-spray {
+  color: #81cfe0;
+}
+.text-shakespeare {
+  color: #52b3d9;
+}
+.text-humming-bird {
+  color: #c5eff7;
+}
+.text-picton-blue {
+  color: #22a7f0;
+}
+.text-curious-blue {
+  color: #3498db;
+}
+.text-madison {
+  color: #2c3e50;
+}
+.text-dodger-blue {
+  color: #19b5fe;
+}
+.text-ming {
+  color: #336e7b;
+}
+.text-ebony-clay {
+  color: #22313f;
+}
+.text-malibu {
+  color: #6bb9f0;
+}
+.text-curious-blue {
+  color: #1e8bc3;
+}
+.text-chambray {
+  color: #3a539b;
+}
+.text-pickled-bluewood {
+  color: #34495e;
+}
+.text-hoki {
+  color: #67809f;
+}
+.text-jelly-bean {
+  color: #2574a9;
+}
+.text-jacksons-purple {
+  color: #1f3a93;
+}
+.text-jordy-blue {
+  color: #89c4f4;
+}
+.text-steel-blue {
+  color: #4b77be;
+}
+.text-fountain-blue {
+  color: #5c97bf;
+}
+.text-medium-turquoise {
+  color: #4ecdc4;
+}
+.text-aqua-island {
+  color: #a2ded0;
+}
+.text-gossip {
+  color: #87d37c;
+}
+.text-dark-sea-green {
+  color: #90c695;
+}
+.text-eucalyptus {
+  color: #26a65b;
+}
+.text-caribbean-green {
+  color: #03c9a9;
+}
+.text-silver-tree {
+  color: #68c3a3;
+}
+.text-downy {
+  color: #65c6bb;
+}
+.text-mountain-meadow {
+  color: #1bbc9b;
+}
+.text-light-sea-green {
+  color: #1ba39c;
+}
+.text-medium-aquamarine {
+  color: #66cc99;
+}
+.text-turquoise {
+  color: #36d7b7;
+}
+.text-madang {
+  color: #c8f7c5;
+}
+.text-riptide {
+  color: #86e2d5;
+}
+.text-shamrock {
+  color: #2ecc71;
+}
+.text-mountain-meadow {
+  color: #16a085;
+}
+.text-emerald {
+  color: #3fc380;
+}
+.text-green-haze {
+  color: #019875;
+}
+.text-free-speech-aquamarine {
+  color: #03a678;
+}
+.text-ocean-green {
+  color: #4daf7c;
+}
+.text-niagara {
+  color: #2abb9b;
+}
+.text-jade {
+  color: #00b16a;
+}
+.text-salem {
+  color: #1e824c;
+}
+.text-observatory {
+  color: #049372;
+}
+.text-jungle-green {
+  color: #26c281;
+}
+.text-cape-honey {
+  color: #fde3a7;
+}
+.text-california {
+  color: #f89406;
+}
+.text-fire-bush {
+  color: #eb9532;
+}
+.text-tahiti-gold {
+  color: #e87e04;
+}
+.text-casablanca {
+  color: #f4b350;
+}
+.text-crusta {
+  color: #f2784b;
+}
+.text-jaffa {
+  color: #eb974e;
+}
+.text-lightning-yellow {
+  color: #f5ab35;
+}
+.text-burnt-orange {
+  color: #d35400;
+}
+.text-buttercup {
+  color: #f39c12;
+}
+.text-ecstasy {
+  color: #f9690e;
+}
+.text-sandstorm {
+  color: #f9bf3b;
+}
+.text-jaffa {
+  color: #f27935;
+}
+.text-zest {
+  color: #e67e22;
+}
+.text-white-smoke {
+  color: #ececec;
+}
+.text-lynch {
+  color: #6c7a89;
+}
+.text-pumice {
+  color: #d2d7d3;
+}
+.text-gallery {
+  color: #eeeeee;
+}
+.text-silver-sand {
+  color: #bdc3c7;
+}
+.text-porcelain {
+  color: #ecf0f1;
+}
+.text-cascade {
+  color: #95a5a6;
+}
+.text-iron {
+  color: #dadfe1;
+}
+.text-edward {
+  color: #abb7b7;
+}
+.text-cararra {
+  color: #f2f1ef;
+}
+.text-silver {
+  color: #bfbfbf;
+}

@@ -1,0 +1,21 @@
+<div class="row mb-5">
+  <ng-container *ngFor="let gradient of favorites">
+    <div class="col-md-3 mb-3 mb-md-5">
+      <div class="py-5 text-center cursor-pointer" [class]="gradient.class">
+        {{ gradient.name }}
+        <pre class="mt-2">{{ gradient.class }}</pre>
+      </div>
+    </div>
+  </ng-container>
+</div>
+
+<div class="row mb-5">
+  <ng-container *ngFor="let gradient of gradients">
+    <div class="col-md-3 mb-3 mb-md-5">
+      <div class="py-5 text-center" [class]="gradient.class">
+        {{ gradient.name }}
+        <pre class="mt-2">{{ gradient.class }}</pre>
+      </div>
+    </div>
+  </ng-container>
+</div>
