@@ -7,7 +7,7 @@ import { UiLink } from '@kikstart-ui/ui-link'
 @Component({
   selector: 'ui-hero',
   template: `
-    <div class="jumbotron mb-0" [class.text-center]="centered">
+    <div class="jumbotron mb-0 {{ class }}" [class.text-center]="centered">
       <div class="my-3 mb-5">
         <div class="mb-3">
           <ui-avatar *ngIf="avatarUrl" [avatarUrl]="avatarUrl" [size]="avatarSize"></ui-avatar>
@@ -55,6 +55,7 @@ export class UiHeroComponent {
   @Input() brand: UiBrand
   @Input() brandSize: UiBrandSizes = 'lg'
   @Input() centered = true
+  @Input() class?: string
   @Input() link: UiLink
   @Input() linkClass = 'btn btn-lg btn-outline-success'
   @Input() title?: string

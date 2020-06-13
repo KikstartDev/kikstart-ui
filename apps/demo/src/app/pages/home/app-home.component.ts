@@ -7,7 +7,14 @@ import { config } from '../../app.config'
 @Component({
   template: `
     <console-page>
-      <ui-hero [brand]="brand" [description]="brand.description" [link]="link" [cards]="cards"></ui-hero>
+      <ui-hero
+        class="grd-kikstart"
+        [centered]="false"
+        [brand]="brand"
+        [description]="brand.description"
+        [link]="link"
+        [cards]="cards"
+      ></ui-hero>
     </console-page>
   `,
 })
