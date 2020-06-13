@@ -7,7 +7,6 @@ import { UiRenderModule } from '@kikstart-ui/ui-render'
 
 import { DemoSharedModule } from '../../demo-shared.module'
 import { DemoComponent } from '../../demo.component'
-import { ThemesGradientsDemoComponent } from './themes-gradients-demo.component'
 
 import { components, config } from './themes-gradients-demo.config'
 
@@ -20,7 +19,7 @@ import { components, config } from './themes-gradients-demo.config'
     LayoutConsoleModule,
     UiButtonModule,
   ],
-  declarations: [...components, ThemesGradientsDemoComponent],
-  entryComponents: [...components, ThemesGradientsDemoComponent],
+  declarations: [...components],
+  entryComponents: [...components],
 })
 export class ThemesGradientsDemoModule {}

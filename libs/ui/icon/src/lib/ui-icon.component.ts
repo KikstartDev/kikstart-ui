@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core'
 import { PullProp, SizeProp } from '@fortawesome/fontawesome-svg-core'
 import { UiIcon } from './ui-icon'
+import { UiIconService } from './ui-icon.service'
 
 @Component({
   selector: 'ui-icon',
@@ -25,4 +26,6 @@ export class UiIconComponent {
   @Input() pulse = false
   @Input() pull: PullProp
   @Input() size: SizeProp
+
+  constructor(private readonly service: UiIconService) {}
 }

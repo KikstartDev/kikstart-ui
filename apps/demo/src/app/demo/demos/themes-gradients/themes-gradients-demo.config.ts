@@ -1,19 +1,19 @@
 import { DemoHelper } from '../../demo.helper'
 
-import { ThemesGradientsDemoComponent } from './themes-gradients-demo.component'
+import { CustomGradientsDemoComponent } from './custom-gradients-demo.component'
 
-export const components = [ThemesGradientsDemoComponent]
+export const components = [CustomGradientsDemoComponent]
 
 export const config = {
   title: 'Gradients',
   demos: [
     DemoHelper.config({
-      title: 'CSS Gradients',
+      title: 'Custom Gradients',
       description:
-        'The `@kikstart-ui/themes` package includes a slightly modified fork of [itmeo/webgradients](https://github.com/itmeo/webgradients)',
-      component: ThemesGradientsDemoComponent,
+        'Custom gradients can be created by including the [colors](/demos/themes-colors) and using their CSS variables.',
+      component: CustomGradientsDemoComponent,
       path: 'demos/themes-gradients',
-      files: ['themes-gradients-demo.component.html', 'themes-gradients-demo.component.ts'],
+      files: ['custom-gradients-demo.component.html', 'custom-gradients-demo.component.ts'],
     }),
   ],
 }
