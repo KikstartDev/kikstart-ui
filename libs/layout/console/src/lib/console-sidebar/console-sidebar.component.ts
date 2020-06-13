@@ -1,3 +1,4 @@
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout'
 import { Component, Input, OnInit } from '@angular/core'
 import { Router } from '@angular/router'
 import { ConsoleBrand } from '../console-navbar/console.brand'
@@ -6,11 +7,11 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
 @Component({
   selector: 'console-sidebar',
   template: `
-    <div class="ui-sidebar bg-darker h-100 d-flex flex-column" [class.ui-sidebar-collapse]="collapse">
-      <console-navbar [collapsed]="collapse" [brand]="brand"></console-navbar>
+    <div class="ui-sidebar bg-darker h-100 d-flex flex-column" [class.ui-sidebar-collapse]="collapsed">
+      <console-navbar [collapsed]="collapsed" [brand]="brand"></console-navbar>
       <div
         class="d-flex justify-content-between ui-sidebar-header-top cursor-pointer"
-        [class.flex-column]="collapse"
+        [class.flex-column]="collapsed"
         *ngIf="homeLink || settingsLink"
       >
         <a
@@ -23,13 +24,13 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
           <i *ngIf="homeLink.icon" class="ui-sidebar-icon fa fa-fw {{ homeLink.icon }} mr-3 "></i>
           <span class="ui-sidebar-label" *ngIf="homeLink.label">{{ homeLink.label }}</span>
         </a>
-        <div [class.mt-3]="collapse" *ngIf="settingsLink">
+        <div [class.mt-3]="collapsed" *ngIf="settingsLink">
           <a [routerLink]="settingsLink.path" routerLinkActive="text-primary">
             <i class="ui-sidebar-icon fa fa-fw {{ settingsLink.icon }}"></i>
           </a>
         </div>
       </div>
-      <div [class.flex-grow-1]="!collapse" class="overflow-auto">
+      <div [class.flex-grow-1]="!collapsed" class="overflow-auto">
         <ng-container *ngFor="let link of _links">
           <div
             class="ui-sidebar-group"
@@ -71,6 +72,7 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
                   >
                     <i *ngIf="child.icon" class="ui-sidebar-icon fa fa-fw {{ child.icon }} mr-3 "></i>
                     <a
+                      (click)="handleChildClick()"
                       [routerLink]="child.path"
                       routerLinkActive="text-primary"
                       class="ui-sidebar-label"
@@ -86,9 +88,9 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
       </div>
       <div
         class="d-flex ui-sidebar-header-top"
-        [ngClass]="{ 'justify-content-center': collapse, 'justify-content-end': !collapse }"
+        [ngClass]="{ 'justify-content-center': collapsed, 'justify-content-end': !collapsed }"
       >
-        <div (click)="collapse = !collapse" class="ui-collapse-icon-wrapper cursor-pointer">
+        <div (click)="toggleSidebar()" class="ui-collapse-icon-wrapper cursor-pointer">
           <i class="ui-sidebar-icon ui-collapse-icon"></i>
         </div>
       </div>
@@ -98,19 +100,36 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
 export class ConsoleSidebarComponent implements OnInit {
   public show = {}
   @Input() baseLink: string
-  @Input() collapse = false
+  @Input() collapse
   @Input() brand: ConsoleBrand
   @Input() homeLink?: ConsoleSidebarLink
   @Input() settingsLink?: ConsoleSidebarLink
   @Input() links?: ConsoleSidebarLink[] = []
   public _links: ConsoleSidebarLink[]
 
-  constructor(private readonly router: Router) {}
+  private smallScreen = false
+
+  constructor(private readonly breakpointObserver: BreakpointObserver, private readonly router: Router) {
+    breakpointObserver
+      .observe([Breakpoints.XSmall, Breakpoints.Small, Breakpoints.Medium])
+      .subscribe((result) => (this.smallScreen = result.matches))
+  }
 
   public ngOnInit() {
     this._links = this.getLinks()
   }
 
+  get collapsed() {
+    return typeof this.collapse === 'undefined' ? this.smallScreen : this.collapse
+  }
+
+  toggleSidebar() {
+    if (typeof this.collapse === 'undefined') {
+      this.collapse = false
+    } else {
+      this.collapse = !this.collapse
+    }
+  }
   toggleChildren(link: ConsoleSidebarLink) {
     this.show[link.label] = !this.show[link.label]
   }
@@ -144,5 +163,11 @@ export class ConsoleSidebarComponent implements OnInit {
         active: !!activeChildren,
       }
     })
+  }
+
+  public handleChildClick() {
+    if (this.smallScreen) {
+      this.collapse = true
+    }
   }
 }

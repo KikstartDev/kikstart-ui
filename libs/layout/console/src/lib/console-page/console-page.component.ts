@@ -11,19 +11,21 @@ import { ConsoleLink } from '../console-sidebar/console-link'
             <i class="fa fa-fw fa-arrow-left"></i>
           </a>
         </div>
-        <div class="align-self-center" *ngIf="link">
-          <a [routerLink]="link.path" class="ml-3">
-            <i *ngIf="link.icon" class="fa fa-fw {{ link.icon }} "></i>
-            <span *ngIf="link.label">{{ link.label }}</span>
-          </a>
-        </div>
-        <div class="align-self-center px-3 p-2 flex-grow-1 d-flex">
-          <span [style.font-size.rem]="2">{{ title }}</span>
-          <ng-content select=".left"></ng-content>
-        </div>
-        <div class="align-self-center px-3 p-2">
-          <ng-content select=".right"></ng-content>
-        </div>
+        <ng-container *ngIf="link || title">
+          <div class="align-self-center" *ngIf="link">
+            <a [routerLink]="link.path" class="ml-3">
+              <i *ngIf="link.icon" class="fa fa-fw {{ link.icon }} "></i>
+              <span *ngIf="link.label">{{ link.label }}</span>
+            </a>
+          </div>
+          <div class="align-self-center px-3 p-2 flex-grow-1 d-flex" *ngIf="title">
+            <span [style.font-size.rem]="2">{{ title }}</span>
+            <ng-content select=".left"></ng-content>
+          </div>
+          <div class="align-self-center px-3 p-2">
+            <ng-content select=".right"></ng-content>
+          </div>
+        </ng-container>
       </div>
       <div *ngIf="tabs && tabs.length" class="p-2">
         <console-tabs [tabs]="tabs"></console-tabs>
