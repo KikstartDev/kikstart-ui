@@ -29,7 +29,7 @@ import { ConsoleSidebarLink } from './console-sidebar-link'
           </a>
         </div>
       </div>
-      <div [class.flex-grow-1]="!collapse">
+      <div [class.flex-grow-1]="!collapse" class="overflow-auto">
         <ng-container *ngFor="let link of _links">
           <div
             class="ui-sidebar-group"

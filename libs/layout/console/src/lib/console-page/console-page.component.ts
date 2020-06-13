@@ -6,13 +6,18 @@ import { ConsoleLink } from '../console-sidebar/console-link'
   template: `
     <div class="d-flex flex-column justify-content-between h-100">
       <div class="d-flex justify-content-between">
+        <div class="align-self-center" *ngIf="backLinkPath">
+          <a [routerLink]="backLinkPath" class="ml-3">
+            <i class="fa fa-fw fa-arrow-left"></i>
+          </a>
+        </div>
         <div class="align-self-center" *ngIf="link">
           <a [routerLink]="link.path" class="ml-3">
             <i *ngIf="link.icon" class="fa fa-fw {{ link.icon }} "></i>
             <span *ngIf="link.label">{{ link.label }}</span>
           </a>
         </div>
-        <div class="align-self-center px-3 p-2 flex-grow-1">
+        <div class="align-self-center px-3 p-2 flex-grow-1 d-flex">
           <span [style.font-size.rem]="2">{{ title }}</span>
           <ng-content select=".left"></ng-content>
         </div>
@@ -32,6 +37,7 @@ import { ConsoleLink } from '../console-sidebar/console-link'
   `,
 })
 export class ConsolePageComponent {
+  @Input() public backLinkPath?: string
   @Input() public link?: ConsoleLink
   @Input() public tabs?: ConsoleLink[]
   @Input() public title: string
