@@ -38,6 +38,10 @@ const routes: Routes = [
     loadChildren: () => import('./demos/ui-card/ui-card-demo.module').then((m) => m.UiCardDemoModule),
   },
   {
+    path: 'ui-cart-icon',
+    loadChildren: () => import('./demos/ui-cart-icon/ui-cart-icon-demo.module').then((m) => m.UiCartIconDemoModule),
+  },
+  {
     path: 'ui-code',
     loadChildren: () => import('./demos/ui-code/ui-code-demo.module').then((m) => m.UiCodeDemoModule),
   },
@@ -73,6 +77,10 @@ const routes: Routes = [
   {
     path: 'ui-no-data',
     loadChildren: () => import('./demos/ui-no-data/ui-no-data-demo.module').then((m) => m.UiNoDataDemoModule),
+  },
+  {
+    path: 'ui-price',
+    loadChildren: () => import('./demos/ui-price/ui-price-demo.module').then((m) => m.UiPriceDemoModule),
   },
   {
     path: 'ui-render',
