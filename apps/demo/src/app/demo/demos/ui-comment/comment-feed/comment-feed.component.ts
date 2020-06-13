@@ -10,7 +10,7 @@ export const randInt = (min: number, max: number): number => Math.floor(Math.ran
 export class CommentFeedComponent {
   public feed: UiComment[] = []
 
-  public link = ['/demo/avatar']
+  public link = ['/demos/avatar']
 
   constructor() {
     this.createCommentFeed()
@@ -35,7 +35,7 @@ export class CommentFeedComponent {
           ButtonHelper.comment({
             label: `${randInt(0, 15)} Comments`,
             payload: { id: i },
-            path: '/demo/ui-comment',
+            path: '/demos/ui-comment',
             queryParams: { id: i.toString() },
           }),
         ],

@@ -15,7 +15,7 @@ const hello: string = 'world'
 #### Links
 
 - External link <a href="https://kikstart.dev">kikstart.dev</a>.
-- Internal link [ui-code](/demo/ui-code).
+- Internal link [ui-code](/demos/ui-code).
 
 #### Images
 

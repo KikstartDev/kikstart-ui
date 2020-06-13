@@ -113,6 +113,9 @@
     },
     "ui-icon": {
       "tags": []
+    },
+    "demos-layout": {
+      "tags": []
     }
   }
 }

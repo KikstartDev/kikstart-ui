@@ -34,36 +34,36 @@ export class AppLayoutComponent {
 
   public links = [
     LayoutConsoleHelper.header('Components', [
-      LayoutConsoleHelper.link('/demos/ui-avatar', 'Avatar', ''),
-      LayoutConsoleHelper.link('/demos/ui-brand', 'Brand', ''),
-      LayoutConsoleHelper.link('/demos/ui-button', 'Button', ''),
-      LayoutConsoleHelper.link('/demos/ui-card', 'Card', ''),
-      LayoutConsoleHelper.link('/demos/ui-cart-icon', 'Cart Icon', ''),
-      LayoutConsoleHelper.link('/demos/ui-code', 'Code', ''),
-      LayoutConsoleHelper.link('/demos/ui-comment', 'Comment', ''),
-      LayoutConsoleHelper.link('/demos/ui-comment-form', 'Comment Form', ''),
-      LayoutConsoleHelper.link('/demos/ui-form', 'Form', ''),
-      LayoutConsoleHelper.link('/demos/ui-hero', 'Hero', ''),
-      LayoutConsoleHelper.link('/demos/ui-icon', 'Icon', ''),
-      LayoutConsoleHelper.link('/demos/ui-list', 'List', ''),
-      LayoutConsoleHelper.link('/demos/ui-markdown', 'Markdown', ''),
-      LayoutConsoleHelper.link('/demos/ui-no-data', 'No Data', ''),
-      LayoutConsoleHelper.link('/demos/ui-price', 'Price', ''),
-      LayoutConsoleHelper.link('/demos/ui-render', 'Render', ''),
-      LayoutConsoleHelper.link('/demos/ui-sidebar', 'Sidebar', ''),
+      LayoutConsoleHelper.link('/demos/ui-avatar', 'Avatar', 'fa-user'),
+      LayoutConsoleHelper.link('/demos/ui-brand', 'Brand', 'fa-cube'),
+      LayoutConsoleHelper.link('/demos/ui-button', 'Button', 'fa-cube'),
+      LayoutConsoleHelper.link('/demos/ui-card', 'Card', 'fa-cube'),
+      LayoutConsoleHelper.link('/demos/ui-cart-icon', 'Cart Icon', 'fa-shopping-cart'),
+      LayoutConsoleHelper.link('/demos/ui-code', 'Code', 'fa-code'),
+      LayoutConsoleHelper.link('/demos/ui-comment', 'Comment', 'fa-comments'),
+      LayoutConsoleHelper.link('/demos/ui-comment-form', 'Comment Form', 'fa-comment'),
+      LayoutConsoleHelper.link('/demos/ui-form', 'Form', 'fa-pencil'),
+      LayoutConsoleHelper.link('/demos/ui-hero', 'Hero', 'fa-cube'),
+      LayoutConsoleHelper.link('/demos/ui-icon', 'Icon', 'fa-cube'),
+      LayoutConsoleHelper.link('/demos/ui-list', 'List', 'fa-list'),
+      LayoutConsoleHelper.link('/demos/ui-markdown', 'Markdown', 'fa-file-text'),
+      LayoutConsoleHelper.link('/demos/ui-no-data', 'No Data', 'fa-warning'),
+      LayoutConsoleHelper.link('/demos/ui-price', 'Price', 'fa-dollar'),
+      LayoutConsoleHelper.link('/demos/ui-render', 'Render', 'fa-cube'),
+      LayoutConsoleHelper.link('/demos/ui-sidebar', 'Sidebar', 'fa-cube'),
     ]),
     LayoutConsoleHelper.header('Layout', [
       //
-      LayoutConsoleHelper.link('/demos/layout-console', 'Console', ''),
+      LayoutConsoleHelper.link('/demos/layout-console', 'Console', 'fa-cube'),
     ]),
     LayoutConsoleHelper.header('Libraries', [
       //
-      LayoutConsoleHelper.link('/demos/lib-editorjs', 'Editor.js', ''),
+      LayoutConsoleHelper.link('/demos/lib-editorjs', 'Editor.js', 'fa-cube'),
     ]),
     LayoutConsoleHelper.header('Themes', [
       //
-      LayoutConsoleHelper.link('/demos/themes-colors', 'Colors', ''),
-      LayoutConsoleHelper.link('/demos/themes-gradients', 'Gradients', ''),
+      LayoutConsoleHelper.link('/demos/themes-colors', 'Colors', 'fa-cube'),
+      LayoutConsoleHelper.link('/demos/themes-gradients', 'Gradients', 'fa-cube'),
     ]),
   ]
   public user = {
