@@ -1,22 +1,37 @@
-<div class="mb-5">
-  <ng-container *ngFor="let color of colors; let i = index">
-    <ng-container *ngIf="i % 30 === 0">
-      <div class="mb-5"></div>
+<div class="row">
+  <div class="col-md-6">
+    <ng-container *ngFor="let color of colors; let i = index">
+      <ng-container *ngIf="i % 14 === 0">
+        <div class="mb-5"></div>
+      </ng-container>
+      <span
+        (click)="selectColor(color)"
+        class="p-3 mr-1 cursor-pointer"
+        [class]="'bg-' + color.name"
+        [attr.title]="color.name"
+      >
+      </span>
     </ng-container>
-    <span class="p-3 mr-1" [class]="'bg-' + color.name" [attr.title]="color.name"> </span>
-  </ng-container>
-</div>
+  </div>
+  <div class="col-md-6">
+    <div class="mb-3 mb-md-5" *ngIf="selected">
+      <button
+        class="btn btn-lg btn-outline-secondary text-{{ selected.name }} border-{{ selected.name }} mb-3"
+        (click)="random()"
+      >
+        <ui-icon icon="sync" class="text-{{ selected.name }}"></ui-icon> Random Color
+      </button>
 
-<div class="row mb-5">
-  <ng-container *ngFor="let color of colors">
-    <div class="col-md-6 mb-3 mb-md-5">
-      <h4 class="my-0 py-4 text-{{ color.name }} text-center border border-{{ color.name }} ">{{ color.name }}</h4>
-      <div class="py-5 text-center cursor-pointer" [class]="'bg-' + color.name">
-        <h4 class="mb-4">{{ color.color }}</h4>
-        <pre>bg-{{ color.name }}</pre>
-        <pre>border-{{ color.name }}</pre>
-        <pre>text-{{ color.name }}</pre>
+      <h4 class="my-0 py-4 text-{{ selected.name }} text-center border border-{{ selected.name }}">
+        {{ selected.name }}
+      </h4>
+      <div class="py-5 text-center cursor-pointer" [class]="'bg-' + selected.name">
+        <h4 class="mb-4">{{ selected.color }}</h4>
+        <pre>bg-{{ selected.name }}</pre>
+        <pre>border-{{ selected.name }}</pre>
+        <pre>text-{{ selected.name }}</pre>
+        <pre>var(--{{ selected.name }})</pre>
       </div>
     </div>
-  </ng-container>
+  </div>
 </div>

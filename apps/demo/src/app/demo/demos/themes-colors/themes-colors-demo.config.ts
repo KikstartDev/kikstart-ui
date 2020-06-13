@@ -9,11 +9,13 @@ export const config = {
   demos: [
     DemoHelper.config({
       title: 'Colors',
-      description:
-        'The `@kikstart-ui/themes` package includes a slightly modified fork of [clsmedia/flatuicolor.css](https://github.com/clsmedia/flatuicolor.css)',
+      description: `The \`@kikstart-ui/themes\` package includes the Material colors defined in [@material/theme](https://npm.im/@material/theme)
+
+Each color has a <code>bg-</code>, <code>border-</code> and  <code>text-</code> class.
+`,
       component: ThemesColorsDemoComponent,
-      path: 'demos/themes-gradients',
-      files: ['themes-gradients-demo.component.html', 'themes-gradients-demo.component.ts'],
+      path: 'demos/themes-colors',
+      files: ['themes-colors-demo.component.html', 'themes-colors-demo.component.ts'],
     }),
   ],
 }

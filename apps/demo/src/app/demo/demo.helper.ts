@@ -6,6 +6,7 @@ const getLastPart = (item: string, separator: string) => {
 }
 
 export class DemoHelper {
+  static rand = (items) => items[Math.floor(Math.random() * items.length)]
   static fileType = (name) => {
     const ext = getLastPart(name, '.')
 
