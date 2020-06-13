@@ -1397,24 +1397,6 @@ export function getGradients() {
       ],
     },
     {
-      name: 'Above Clouds',
-      class: 'grd-above-clouds',
-      favorite: false,
-      index: '071',
-      deg: 0,
-      group: ['#E5E9EC'],
-      gradient: [
-        {
-          color: '#BDBBBE',
-          pos: 0,
-        },
-        {
-          color: '#9D9EA3',
-          pos: 100,
-        },
-      ],
-    },
-    {
       name: 'Spiky Naga',
       class: 'grd-spiky-naga',
       favorite: false,
@@ -2122,24 +2104,6 @@ export function getGradients() {
         },
         {
           color: '#c7eafd',
-          pos: 100,
-        },
-      ],
-    },
-    {
-      name: 'Elegance',
-      class: 'grd-elegance',
-      favorite: false,
-      index: '111',
-      deg: 0,
-      group: ['#E5E9EC'],
-      gradient: [
-        {
-          color: '#EADFDF',
-          pos: 59,
-        },
-        {
-          color: '#ECE2DF',
           pos: 100,
         },
       ],
@@ -3040,24 +3004,6 @@ export function getGradients() {
         },
         {
           color: '#F578DC',
-          pos: 100,
-        },
-      ],
-    },
-    {
-      name: 'Salt Mountain',
-      class: 'grd-salt-mountain',
-      favorite: false,
-      index: '161',
-      deg: -225,
-      group: ['#E5E9EC'],
-      gradient: [
-        {
-          color: '#FFFEFF',
-          pos: 0,
-        },
-        {
-          color: '#D7FFFE',
           pos: 100,
         },
       ],
