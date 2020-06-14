@@ -1,20 +1,26 @@
+import { CommonModule } from '@angular/common'
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
 import { LayoutConsoleModule } from '@kikstart-ui/layout-console'
+import { LayoutDocsModule } from '@kikstart-ui/layout-docs'
 import { UiHeroModule } from '@kikstart-ui/ui-hero'
+import { DemoLayoutDocsDummyComponent } from './demo-layout-docs-dummy.component'
 import { DemoLayoutDocsComponent } from './demo-layout-docs.component'
 
 @NgModule({
-  declarations: [DemoLayoutDocsComponent],
+  declarations: [DemoLayoutDocsComponent, DemoLayoutDocsDummyComponent],
   imports: [
+    CommonModule,
     RouterModule.forChild([
       {
         path: '',
         component: DemoLayoutDocsComponent,
+        children: [{ path: '**', component: DemoLayoutDocsDummyComponent }],
       },
     ]),
     LayoutConsoleModule,
     UiHeroModule,
+    LayoutDocsModule,
   ],
 })
 export class DemoLayoutDocsModule {}

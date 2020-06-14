@@ -13,10 +13,7 @@ import { DemoLayoutConsoleComponent } from './demo-layout-console.component'
       {
         path: '',
         component: DemoLayoutConsoleComponent,
-        children: [
-          //
-          { path: '**', component: DemoLayoutConsoleDummyComponent },
-        ],
+        children: [{ path: '**', component: DemoLayoutConsoleDummyComponent }],
       },
     ]),
     LayoutConsoleModule,

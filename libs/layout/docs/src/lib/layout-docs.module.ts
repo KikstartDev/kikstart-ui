@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core'
-import { CommonModule } from '@angular/common'
+import { DocsLayoutModule } from './docs-layout/docs-layout.module'
+import { DocsSidebarModule } from './docs-sidebar/docs-sidebar.module'
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [DocsLayoutModule, DocsSidebarModule],
+  exports: [DocsLayoutModule, DocsSidebarModule],
 })
 export class LayoutDocsModule {}

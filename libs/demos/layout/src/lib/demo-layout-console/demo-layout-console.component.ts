@@ -21,7 +21,6 @@ const range = (start: number = 0, end: number = 10): number[] => Array.from({ le
           </a>
         </span>
       </console-navbar>
-      <pre>{{ basePath | json }}</pre>
       <console-sidebar [links]="links" [baseLink]="basePath" [brand]="brand"> </console-sidebar>
 
       <div class="h-100 overflow-auto">
