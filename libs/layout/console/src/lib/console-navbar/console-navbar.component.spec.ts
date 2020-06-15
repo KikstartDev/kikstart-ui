@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing'
+import { RouterTestingModule } from '@angular/router/testing'
 
 import { ConsoleNavbarComponent } from './console-navbar.component'
 
@@ -8,6 +9,7 @@ describe('ConsoleNavbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
       declarations: [ConsoleNavbarComponent],
     }).compileComponents()
   }))
