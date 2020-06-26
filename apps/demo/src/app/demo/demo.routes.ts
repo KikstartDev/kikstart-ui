@@ -21,6 +21,11 @@ export const routes: Routes = [
       import('./demos/themes-gradients/themes-gradients-demo.module').then((m) => m.ThemesGradientsDemoModule),
   },
   {
+    path: 'themes-switcher',
+    loadChildren: () =>
+      import('./demos/themes-switcher/themes-switcher-demo.module').then((m) => m.ThemesSwitcherDemoModule),
+  },
+  {
     path: 'ui-avatar',
     loadChildren: () => import('./demos/ui-avatar/ui-avatar-demo.module').then((m) => m.UiAvatarDemoModule),
   },

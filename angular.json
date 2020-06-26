@@ -25,7 +25,24 @@
             "tsConfig": "apps/demo/tsconfig.app.json",
             "aot": true,
             "assets": ["apps/demo/src/favicon.ico", "apps/demo/src/robots.txt", "apps/demo/src/assets"],
-            "styles": ["apps/demo/src/styles.scss"],
+            "styles": [
+              "apps/demo/src/styles.scss",
+              {
+                "input": "apps/demo/src/themes/dark.scss",
+                "bundleName": "dark",
+                "inject": false
+              },
+              {
+                "input": "apps/demo/src/themes/light.scss",
+                "bundleName": "light",
+                "inject": false
+              },
+              {
+                "input": "apps/demo/src/themes/pirate.scss",
+                "bundleName": "pirate",
+                "inject": false
+              }
+            ],
             "scripts": []
           },
           "configurations": {

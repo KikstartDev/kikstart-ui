@@ -64,6 +64,7 @@ export class AppLayoutComponent {
       //
       LayoutConsoleHelper.link('/demos/themes-colors', 'Colors', 'fa-cube'),
       LayoutConsoleHelper.link('/demos/themes-gradients', 'Gradients', 'fa-cube'),
+      // LayoutConsoleHelper.link('/demos/themes-switcher', 'Switcher', 'fa-cube'),
     ]),
   ]
   public user = {
