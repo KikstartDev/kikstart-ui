@@ -32,7 +32,7 @@ import { UiLink } from '@kikstart-ui/ui-link'
           [class.col-md-4]="cards?.length === 3"
         >
           <ui-card>
-            <ui-card-header *ngIf="card.title" [cardTitle]="card.title"></ui-card-header>
+            <ui-card-header *ngIf="card.title" [title]="card.title"></ui-card-header>
             <ui-card-body *ngIf="card.content">
               {{ card.content }}
             </ui-card-body>

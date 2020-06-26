@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core'
 import { RouterModule } from '@angular/router'
+import { LayoutConsoleModule } from '@kikstart-ui/layout-console'
 
 @NgModule({
   imports: [
+    LayoutConsoleModule,
     RouterModule.forChild([
       {
         path: '',
