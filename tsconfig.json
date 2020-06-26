@@ -18,7 +18,6 @@
     "baseUrl": ".",
     "paths": {
       "@kikstart-ui/create-kikstart-ui": ["libs/create-kikstart-ui/src/index.ts"],
-      "@kikstart-ui/demos/layout": ["libs/demos/layout/src/index.ts"],
       "@kikstart-ui/layout-console": ["libs/layout/console/src/index.ts"],
       "@kikstart-ui/layout-docs": ["libs/layout/docs/src/index.ts"],
       "@kikstart-ui/layout-web": ["libs/layout/web/src/index.ts"],

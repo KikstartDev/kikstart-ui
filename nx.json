@@ -19,12 +19,27 @@
     }
   },
   "projects": {
-    "demo": {
+    "create-kikstart-ui": {
       "tags": []
     },
+    "demo": {
+      "tags": ["app:demo"]
+    },
     "demo-e2e": {
-      "tags": [],
+      "tags": ["app:demo"],
       "implicitDependencies": ["demo"]
+    },
+    "layout-console": {
+      "tags": []
+    },
+    "layout-docs": {
+      "tags": []
+    },
+    "layout-web": {
+      "tags": []
+    },
+    "lib-editorjs": {
+      "tags": []
     },
     "schematics": {
       "tags": []
@@ -33,92 +48,74 @@
       "tags": [],
       "implicitDependencies": ["schematics"]
     },
-    "create-kikstart-ui": {
-      "tags": []
-    },
-    "layout-console": {
-      "tags": []
-    },
     "themes": {
       "tags": []
     },
-    "ui-form": {
-      "tags": []
-    },
-    "ui-render": {
-      "tags": []
-    },
     "ui-avatar": {
-      "tags": []
+      "tags": ["ui-component"]
     },
     "ui-brand": {
-      "tags": []
+      "tags": ["ui-component"]
     },
     "ui-button": {
-      "tags": []
+      "tags": ["ui-component"]
     },
     "ui-card": {
-      "tags": []
+      "tags": ["ui-component"]
     },
     "ui-cart-icon": {
-      "tags": []
+      "tags": ["ui-component"]
     },
     "ui-code": {
-      "tags": []
+      "tags": ["ui-component"]
     },
     "ui-comment": {
-      "tags": []
-    },
-    "ui-hero": {
-      "tags": []
-    },
-    "ui-label": {
-      "tags": []
-    },
-    "ui-link": {
-      "tags": []
-    },
-    "ui-loading": {
-      "tags": []
-    },
-    "ui-markdown": {
-      "tags": []
-    },
-    "ui-no-data": {
-      "tags": []
-    },
-    "ui-price": {
-      "tags": []
-    },
-    "ui-timeago": {
-      "tags": []
-    },
-    "layout-docs": {
-      "tags": []
-    },
-    "ui-tabs": {
-      "tags": []
+      "tags": ["ui-component"]
     },
     "ui-footer": {
-      "tags": []
+      "tags": ["ui-component"]
     },
-    "lib-editorjs": {
-      "tags": []
+    "ui-form": {
+      "tags": ["ui-component"]
     },
-    "ui-sidebar": {
-      "tags": []
-    },
-    "ui-list": {
-      "tags": []
+    "ui-hero": {
+      "tags": ["ui-component"]
     },
     "ui-icon": {
-      "tags": []
+      "tags": ["ui-component"]
     },
-    "demos-layout": {
-      "tags": []
+    "ui-label": {
+      "tags": ["ui-component"]
     },
-    "layout-web": {
-      "tags": []
+    "ui-link": {
+      "tags": ["ui-component"]
+    },
+    "ui-list": {
+      "tags": ["ui-component"]
+    },
+    "ui-loading": {
+      "tags": ["ui-component"]
+    },
+    "ui-markdown": {
+      "tags": ["ui-component"]
+    },
+    "ui-no-data": {
+      "tags": ["ui-component"]
+    },
+    "ui-price": {
+      "tags": ["ui-component"]
+    },
+    "ui-render": {
+      "tags": ["ui-component"]
+    },
+    "ui-sidebar": {
+      "tags": ["ui-component"]
+    },
+    "ui-tabs": {
+      "tags": ["ui-component"]
+    },
+    "ui-timeago": {
+      "tags": ["ui-component"]
     }
   }
 }

@@ -9,7 +9,7 @@ export const routes: Routes = [
       { path: 'home', loadChildren: () => import('./pages/home/app-home.module').then((m) => m.AppHomeModule) },
       {
         path: 'layouts',
-        loadChildren: () => import('@kikstart-ui/demos/layout').then((m) => m.DemosLayoutModule),
+        loadChildren: () => import('./layouts/demos-layout.module').then((m) => m.DemosLayoutModule),
       },
     ],
   },
