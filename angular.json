@@ -1388,6 +1388,47 @@
           "style": "scss"
         }
       }
+    },
+    "layout-web": {
+      "projectType": "library",
+      "root": "libs/layout/web",
+      "sourceRoot": "libs/layout/web/src",
+      "prefix": "kikstart-ui",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/layout/web/tsconfig.lib.json",
+            "project": "libs/layout/web/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/layout/web/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/layout/web/tsconfig.lib.json", "libs/layout/web/tsconfig.spec.json"],
+            "exclude": ["**/node_modules/**", "!libs/layout/web/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/layout/web/jest.config.js",
+            "tsConfig": "libs/layout/web/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/layout/web/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {

@@ -116,6 +116,9 @@
     },
     "demos-layout": {
       "tags": []
+    },
+    "layout-web": {
+      "tags": []
     }
   }
 }

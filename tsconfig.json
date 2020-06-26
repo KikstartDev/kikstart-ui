@@ -21,6 +21,7 @@
       "@kikstart-ui/demos/layout": ["libs/demos/layout/src/index.ts"],
       "@kikstart-ui/layout-console": ["libs/layout/console/src/index.ts"],
       "@kikstart-ui/layout-docs": ["libs/layout/docs/src/index.ts"],
+      "@kikstart-ui/layout-web": ["libs/layout/web/src/index.ts"],
       "@kikstart-ui/lib-editorjs": ["libs/lib/editorjs/src/index.ts"],
       "@kikstart-ui/schematics": ["libs/schematics/src/index.ts"],
       "@kikstart-ui/themes": ["libs/themes/src/index.ts"],
